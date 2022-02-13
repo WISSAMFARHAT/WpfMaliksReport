@@ -1,0 +1,157 @@
+﻿<Window x:Class="WpfMaliks.Index"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfMaliks"
+        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+
+        mc:Ignorable="d"
+        Title="Index" Background="#2A2B30" WindowState="Maximized" WindowStyle="None">
+    <Grid>
+        <materialDesign:Card   Background="#2A2B30">
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="auto"></ColumnDefinition>
+                    <ColumnDefinition Name="auto" ></ColumnDefinition>
+
+                </Grid.ColumnDefinitions>
+                <Grid.Resources>
+                    <Style TargetType="materialDesign:PackIcon">
+                        <Setter Property="Width" Value="30"></Setter>
+                        <Setter Property="Height" Value="30"></Setter>
+
+                    </Style>
+                </Grid.Resources>
+                <Grid Grid.Column="0" HorizontalAlignment="Left" x:Uid="navbar" Name="navbar" Background="#201F24">
+                    <ListView  Width="200" ScrollViewer.HorizontalScrollBarVisibility="Disabled">
+                        <ListViewItem HorizontalAlignment="Left"  Margin="0 10" Width="200">
+       
+                            <Grid>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="Auto"></ColumnDefinition>
+                                    <ColumnDefinition></ColumnDefinition>
+                                </Grid.ColumnDefinitions>
+                                <Button Grid.Column="0"    Style="{StaticResource ShadowStyle}" HorizontalAlignment="Left"
+                                     Foreground="White"  Click="Button_Click">
+                                    <StackPanel>
+                                        <materialDesign:PackIcon Kind="FormatListBulletedSquare" />
+
+                                    </StackPanel>
+                                </Button>
+                            </Grid>
+                        </ListViewItem>
+                        <ListViewItem Name="image" HorizontalAlignment="Center" Width="200">
+                            <Grid >
+                                <Grid.RowDefinitions>
+                                    <RowDefinition></RowDefinition>
+                                    <RowDefinition></RowDefinition>
+                                </Grid.RowDefinitions>
+                            <Image Grid.Row="0" Name="img1" Source="images/user.png" Height="100" HorizontalAlignment="Center" Width="200" VerticalAlignment="Center" />
+                            <TextBlock Grid.Row="1" Name="user" HorizontalAlignment="Center" Foreground="White" FontSize="15" Text="User"></TextBlock>
+                            </Grid>
+                        </ListViewItem>
+                        <ListViewItem HorizontalAlignment="Left" Margin="0" Padding="0"  Cursor="Hand" Width="200" Height="80">
+                            <Grid Width="200" Height="80" MouseDown="button_2" Background="Transparent">
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="auto"></ColumnDefinition>
+                                    <ColumnDefinition></ColumnDefinition>
+                                </Grid.ColumnDefinitions>
+                                <Button Grid.Column="0"  Style="{StaticResource ShadowStyle}" VerticalContentAlignment="Center"  HorizontalAlignment="Left"
+                                           VerticalAlignment="Center" Click="Button_Click_2">
+                                    <StackPanel   >
+                                        <materialDesign:PackIcon Kind="User"  />
+                                    </StackPanel>
+
+                                </Button>
+                                <TextBlock Grid.Column="1"  Cursor="Hand"  Text="Profile" Margin="10 0 0 0 " VerticalAlignment="Center" Foreground="White" HorizontalAlignment="Left" FontSize="20" ></TextBlock>
+                            </Grid>
+                        </ListViewItem>
+
+                        <ListViewItem HorizontalAlignment="Left"   Margin="0" Padding="0" Height="80"  Width="200">
+                            <Grid Width="200" Cursor="Hand" MouseDown="button_3" Height="80" Background="Transparent" >
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="auto"></ColumnDefinition>
+                                    <ColumnDefinition></ColumnDefinition>
+                                </Grid.ColumnDefinitions>
+                                <Button Grid.Column="0" Style="{StaticResource ShadowStyle}"  VerticalContentAlignment="Center" VerticalAlignment="Center"   HorizontalAlignment="Left"
+                                         Click="Button_Click_3"  Foreground="White" >
+                                    <StackPanel   >
+                                        <materialDesign:PackIcon Kind="Report"   />
+                                    </StackPanel>
+
+                                </Button>
+                                <TextBlock Grid.Column="1"  Foreground="White" Text="Report" VerticalAlignment="Center" HorizontalAlignment="Left" FontSize="20" Margin="10 0 0 0"></TextBlock>
+                            </Grid>
+                        </ListViewItem>
+                        <ListViewItem HorizontalAlignment="Left" Margin="0" Padding="0" Height="80" Width="200">
+                            <Grid Width="200" Cursor="Hand" MouseDown="button_4" Height="80" Background="Transparent">
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="Auto"></ColumnDefinition>
+                                    <ColumnDefinition></ColumnDefinition>
+                                </Grid.ColumnDefinitions>
+                                <Button Grid.Column="0"   VerticalAlignment="Bottom" Style="{StaticResource ShadowStyle}" HorizontalAlignment="Left"
+                                           Foreground="White" Click="Button_Click_4">
+                                    <StackPanel   >
+                                        <materialDesign:PackIcon Kind="History"  />
+                                    </StackPanel>
+
+                                </Button>
+                                <TextBlock Grid.Column="1" Foreground="White" Text="History" VerticalAlignment="Center" HorizontalAlignment="Left" FontSize="20" Margin="10 0 0 0"></TextBlock>
+                            </Grid>
+                        </ListViewItem>
+                        <ListViewItem Cursor="Hand"   HorizontalAlignment="Left"  Width="200" Height="80">
+                            <Grid Width="200" Cursor="Hand" MouseDown="button_exit"   Height="80" Background="Transparent" >
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="Auto"></ColumnDefinition>
+                                    <ColumnDefinition></ColumnDefinition>
+                                </Grid.ColumnDefinitions>
+                                <Button Grid.Column="0" Margin="-8 0 0 0" Style="{StaticResource ShadowStyle}" VerticalAlignment="Center" HorizontalAlignment="Left"
+                                   Click="Button_Click_1"   Foreground="White" >
+                                    <StackPanel   >
+                                        <materialDesign:PackIcon Kind="PresenceExit"  />
+                                    </StackPanel>
+
+                                </Button>
+                                <TextBlock Grid.Column="1" Text="Exit" Foreground="White" VerticalAlignment="Center" HorizontalAlignment="Left" FontSize="20" Margin="10 0 0 0"></TextBlock>
+                            </Grid>
+                        </ListViewItem>
+
+
+                    </ListView>
+                </Grid>
+                <Grid Grid.Column="1"  Name="main">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="50"></RowDefinition>
+                        <RowDefinition></RowDefinition>
+                    </Grid.RowDefinitions>
+                    <Grid Grid.Row="0" Background="#121212" >
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition></ColumnDefinition>
+                            <ColumnDefinition></ColumnDefinition>
+                        </Grid.ColumnDefinitions>
+                        <TextBlock Foreground="white" FontSize="20" Grid.Column="0" Padding="20 0 0 0" Text="Report Form Application" VerticalAlignment="Center" HorizontalAlignment="Left"></TextBlock>
+                        <StackPanel Orientation="Horizontal" Grid.Column="1" HorizontalAlignment="Right">
+                            <Button  Background="{x:Null}" Style="{StaticResource MaterialDesignFloatingActionButton}" HorizontalAlignment="Left"
+                                   Click="Minimise" BorderBrush="{x:Null}"   Foreground="White" >
+                                <StackPanel   >
+                                    <materialDesign:PackIcon Kind="Minus"  />
+                                </StackPanel>
+
+                            </Button>
+                            <Button  Background="{x:Null}" Style="{StaticResource MaterialDesignFloatingActionButton}" HorizontalAlignment="Left"
+                                   Click="Power_off" BorderBrush="{x:Null}"   Foreground="White" Margin="0,0,0,-6" VerticalAlignment="Top" >
+                                <StackPanel   >
+                                    <materialDesign:PackIcon Kind="Power"  />
+                                </StackPanel>
+
+                            </Button>
+                           
+                        </StackPanel>
+                    </Grid>
+                    <Frame Name="frame"   Grid.Row="1"></Frame>
+                </Grid>
+            </Grid>
+        </materialDesign:Card>
+    </Grid>
+</Window>

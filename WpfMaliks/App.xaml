@@ -1,0 +1,254 @@
+﻿<Application x:Class="WpfMaliks.App"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:local="clr-namespace:WpfMaliks"
+             StartupUri="MainWindow.xaml">
+    <Application.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="pack://application:,,,/MaterialDesignThemes.Wpf;component/Themes/MaterialDesignTheme.Light.xaml" />
+                <ResourceDictionary Source="pack://application:,,,/MaterialDesignThemes.Wpf;component/Themes/MaterialDesignTheme.Defaults.xaml" />
+                <ResourceDictionary Source="pack://application:,,,/MaterialDesignColors;component/Themes/Recommended/Primary/MaterialDesignColor.DeepPurple.xaml" />
+                <ResourceDictionary Source="pack://application:,,,/MaterialDesignColors;component/Themes/Recommended/Accent/MaterialDesignColor.Lime.xaml" />
+            </ResourceDictionary.MergedDictionaries>
+            <SolidColorBrush x:Key="PrimaryHueLightForegroundBrush" Color="#333333"></SolidColorBrush>
+            <Style x:Key="RoundCorner" TargetType="{x:Type Button}">
+                <Setter Property="HorizontalContentAlignment" Value="Center"/>
+                <Setter Property="VerticalContentAlignment" Value="top"/>
+                <Setter Property="Foreground" Value="white"></Setter>
+                <Setter Property="FontSize" Value="16"></Setter>
+                <Setter Property="Padding" Value="1"/>
+                <Setter Property="Template">
+                    <Setter.Value>
+                        <ControlTemplate TargetType="{x:Type Button}">
+                            <Grid x:Name="grid">
+                                <Border x:Name="border" CornerRadius="10"  Background="#df4759" BorderBrush="#df4759" BorderThickness="1">
+                                    
+                                    <ContentPresenter HorizontalAlignment="Center"
+                                          VerticalAlignment="Center"
+                                          TextElement.FontWeight="Bold">
+                                    </ContentPresenter>
+                                </Border>
+
+                            </Grid>
+                            <ControlTemplate.Triggers>
+                               
+                                <Trigger Property="IsMouseOver" Value="True">
+                                    <Setter Property="BorderBrush" TargetName="border" Value="#FF33962B"/>
+                                    <Setter Property="Background" TargetName="border" Value="#FF33962B"/>
+                                </Trigger>
+                                
+
+                            </ControlTemplate.Triggers>
+                        </ControlTemplate>
+                    </Setter.Value>
+                </Setter>
+            </Style>
+            <Style x:Key="RoundCornersecondery" TargetType="{x:Type Button}">
+                <Setter Property="HorizontalContentAlignment" Value="Center"/>
+                <Setter Property="VerticalContentAlignment" Value="top"/>
+                <Setter Property="Foreground" Value="white"></Setter>
+                <Setter Property="FontSize" Value="16"></Setter>
+                <Setter Property="Padding" Value="1"/>
+                <Setter Property="Template">
+                    <Setter.Value>
+                        <ControlTemplate TargetType="{x:Type Button}">
+                            <Grid x:Name="grid">
+                                <Border x:Name="border" CornerRadius="10"  Background="#0275d8" BorderBrush="#0275d8" BorderThickness="1">
+
+                                    <ContentPresenter HorizontalAlignment="Center"
+                                          VerticalAlignment="Center"
+                                          TextElement.FontWeight="Bold">
+                                    </ContentPresenter>
+                                </Border>
+
+                            </Grid>
+                            <ControlTemplate.Triggers>
+
+                                <Trigger Property="IsMouseOver" Value="True">
+                                    <Setter Property="BorderBrush" TargetName="border" Value="#FF33962B"/>
+                                    <Setter Property="Background" TargetName="border" Value="#FF33962B"/>
+                                </Trigger>
+
+
+                            </ControlTemplate.Triggers>
+                        </ControlTemplate>
+                    </Setter.Value>
+                </Setter>
+            </Style>
+            <Style x:Key="RoundCornermauve" TargetType="{x:Type Button}">
+                <Setter Property="HorizontalContentAlignment" Value="Center"/>
+                <Setter Property="VerticalContentAlignment" Value="top"/>
+                <Setter Property="Foreground" Value="white"></Setter>
+                <Setter Property="FontSize" Value="16"></Setter>
+                <Setter Property="Padding" Value="1"/>
+                <Setter Property="Template">
+                    <Setter.Value>
+                        <ControlTemplate TargetType="{x:Type Button}">
+                            <Grid x:Name="grid">
+                                <Border x:Name="border" CornerRadius="10"  Background="Transparent" BorderBrush="#6610f2" BorderThickness="1">
+
+                                    <ContentPresenter HorizontalAlignment="Center"
+                                          VerticalAlignment="Center"
+                                          TextElement.FontWeight="Bold">
+                                    </ContentPresenter>
+                                </Border>
+
+                            </Grid>
+                            <ControlTemplate.Triggers>
+
+                                <Trigger Property="IsMouseOver" Value="True">
+                                    <Setter Property="BorderBrush" TargetName="border" Value="#6610f2"/>
+                                    <Setter Property="Background" TargetName="border" Value="#6610f2"/>
+                                </Trigger>
+
+
+                            </ControlTemplate.Triggers>
+                        </ControlTemplate>
+                    </Setter.Value>
+                </Setter>
+            </Style>
+            <Style x:Key="RoundCornertranspart" TargetType="{x:Type Button}">
+                <Setter Property="HorizontalContentAlignment" Value="Center"/>
+                <Setter Property="VerticalContentAlignment" Value="top"/>
+                <Setter Property="Foreground" Value="white"></Setter>
+                <Setter Property="FontSize" Value="16"></Setter>
+                <Setter Property="Padding" Value="1"/>
+                <Setter Property="Template">
+                    <Setter.Value>
+                        <ControlTemplate TargetType="{x:Type Button}">
+                            <Grid x:Name="grid">
+                                <Border x:Name="border" CornerRadius="10"  Background="Transparent" BorderBrush="white" BorderThickness="1">
+
+                                    <ContentPresenter HorizontalAlignment="Center"
+                                          VerticalAlignment="Center"
+                                          TextElement.FontWeight="Bold">
+                                    </ContentPresenter>
+                                </Border>
+
+                            </Grid>
+                            <ControlTemplate.Triggers>
+
+                                <Trigger Property="IsMouseOver" Value="True">
+                                    <Setter Property="BorderBrush" TargetName="border" Value="#290661"/>
+                                    <Setter Property="Background" TargetName="border" Value="#290661"/>
+                                </Trigger>
+
+
+                            </ControlTemplate.Triggers>
+                        </ControlTemplate>
+                    </Setter.Value>
+                </Setter>
+            </Style>
+
+
+            <Style x:Key="RoundCornertranspartExport" TargetType="{x:Type Button}">
+                <Setter Property="HorizontalContentAlignment" Value="Center"/>
+                <Setter Property="VerticalContentAlignment" Value="top"/>
+                <Setter Property="Foreground" Value="white"></Setter>
+                <Setter Property="FontSize" Value="16"></Setter>
+                <Setter Property="Padding" Value="1"/>
+                <Setter Property="Template">
+                    <Setter.Value>
+                        <ControlTemplate TargetType="{x:Type Button}">
+                            <Grid x:Name="grid">
+                                <Border x:Name="border" CornerRadius="10"   Background="Transparent" BorderBrush="Green" BorderThickness="1">
+
+                                    <ContentPresenter HorizontalAlignment="Center"
+                                          VerticalAlignment="Center"
+                                          TextElement.FontWeight="Bold">
+                                    </ContentPresenter>
+                                </Border>
+
+                            </Grid>
+                            <ControlTemplate.Triggers>
+
+                                <Trigger Property="IsMouseOver" Value="True">
+                                    <Setter Property="BorderBrush" TargetName="border" Value="Green"/>
+                                    <Setter Property="Background" TargetName="border" Value="Green"/>
+                                    <Setter Property="Foreground"  Value="white"/>
+                                </Trigger>
+
+
+                            </ControlTemplate.Triggers>
+                        </ControlTemplate>
+                    </Setter.Value>
+                </Setter>
+            </Style>
+
+
+
+            <Style x:Key="RoundCornertranspartClear" TargetType="{x:Type Button}">
+                <Setter Property="HorizontalContentAlignment" Value="Center"/>
+                <Setter Property="VerticalContentAlignment" Value="top"/>
+                <Setter Property="Foreground" Value="white"></Setter>
+                <Setter Property="FontSize" Value="16"></Setter>
+                <Setter Property="Padding" Value="1"/>
+                <Setter Property="Template">
+                    <Setter.Value>
+                        <ControlTemplate TargetType="{x:Type Button}">
+                            <Grid x:Name="grid">
+                                <Border x:Name="border" CornerRadius="10"  Background="Transparent" BorderBrush="#df4759" BorderThickness="1">
+
+                                    <ContentPresenter HorizontalAlignment="Center"
+                                          VerticalAlignment="Center"
+                                          TextElement.FontWeight="Bold">
+                                    </ContentPresenter>
+                                </Border>
+
+                            </Grid>
+                            <ControlTemplate.Triggers>
+
+                                <Trigger Property="IsMouseOver" Value="True">
+                                    <Setter Property="BorderBrush" TargetName="border" Value="#df4759"/>
+                                    <Setter Property="Background" TargetName="border" Value="#df4759"/>
+                                    <Setter Property="Foreground" Value="white"></Setter>
+                                </Trigger>
+
+
+                            </ControlTemplate.Triggers>
+                        </ControlTemplate>
+                    </Setter.Value>
+                </Setter>
+            </Style>
+
+            <Style x:Key="ShadowStyle" TargetType="{x:Type Button}">
+                <Setter Property="Foreground" Value="white"></Setter>
+                <Setter Property="Background" Value="{x:Null}"/>
+                <Setter Property="BorderBrush" Value="{x:Null}"/>
+                <Setter Property="Cursor" Value="Hand"/>
+                <Setter Property="Height" Value="80"/>
+                <Setter Property="Width" Value="70"/>
+                <Setter Property="FocusVisualStyle" Value="{x:Null}"/>
+                <Setter Property="Template">
+                    <Setter.Value>
+                        <ControlTemplate TargetType="{x:Type Button}">
+                            <Grid x:Name="grid">
+                                <Border x:Name="border"   Background="Transparent" BorderBrush="Transparent" BorderThickness="1">
+
+                                    <ContentPresenter HorizontalAlignment="Center"
+                                          VerticalAlignment="Center"
+                                          TextElement.FontWeight="Bold">
+                                    </ContentPresenter>
+                                </Border>
+
+                            </Grid>
+                            <ControlTemplate.Triggers>
+
+                                <Trigger Property="IsMouseOver" Value="True">
+                                    <Setter Property="BorderBrush"  Value="{x:Null}"/>
+                                    <Setter Property="Background" Value="{x:Null}"/>
+                                    <Setter Property="Foreground" Value="white"></Setter>
+                                </Trigger>
+
+
+                            </ControlTemplate.Triggers>
+                        </ControlTemplate>
+                    </Setter.Value>
+                </Setter>
+            </Style>
+
+
+        </ResourceDictionary>
+    </Application.Resources>
+</Application>
