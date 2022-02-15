@@ -144,18 +144,18 @@
                 <Border   HorizontalAlignment="Center"  BorderBrush="white" Margin="0 2 0 0"   Padding="10"  BorderThickness="1">
                     <StackPanel Name="IG" Orientation="Vertical" Width="550" Height="auto">
                         <StackPanel Orientation="Horizontal" Height="auto" Margin="0 0 0 10">
-                            <Image RenderOptions.BitmapScalingMode="LowQuality" Name="Gimage1" HorizontalAlignment="Left" Margin="0 0 10 0" Width="90" Height="90" Stretch="Uniform" />
-                            <Image RenderOptions.BitmapScalingMode="LowQuality" Name="Gimage2" HorizontalAlignment="Left" Margin="0 0 10 0" Width="90" Height="90" Stretch="Uniform" />
-                            <Image RenderOptions.BitmapScalingMode="LowQuality" Name="Gimage3" HorizontalAlignment="Left" Margin="0 0 10 0" Width="90" Height="90" Stretch="Uniform" />
-                            <Image RenderOptions.BitmapScalingMode="LowQuality" Name="Gimage4" HorizontalAlignment="Left" Margin="0 0 10 0" Width="90" Height="90" Stretch="Uniform" />
-                            <Image RenderOptions.BitmapScalingMode="LowQuality" Name="Gimage5" HorizontalAlignment="Left" Margin="0 0 10 0" Width="90" Height="90" Stretch="Uniform" />
+                            <Image RenderOptions.BitmapScalingMode="LowQuality"   Name="Gimage1" HorizontalAlignment="Left" Margin="0 0 10 0" Width="90" Height="90"  Stretch="Fill" />
+                            <Image RenderOptions.BitmapScalingMode="LowQuality" Name="Gimage2" HorizontalAlignment="Left" Margin="0 0 10 0" Width="90" Height="90" Stretch="Fill" />
+                            <Image RenderOptions.BitmapScalingMode="LowQuality" Name="Gimage3" HorizontalAlignment="Left" Margin="0 0 10 0" Width="90" Height="90" Stretch="Fill" />
+                            <Image RenderOptions.BitmapScalingMode="LowQuality" Name="Gimage4" HorizontalAlignment="Left" Margin="0 0 10 0" Width="90" Height="90" Stretch="Fill" />
+                            <Image RenderOptions.BitmapScalingMode="LowQuality" Name="Gimage5" HorizontalAlignment="Left" Margin="0 0 10 0" Width="90" Height="90" Stretch="Fill" />
                         </StackPanel>
                         <StackPanel Orientation="Horizontal" Height="auto">
-                            <Image RenderOptions.BitmapScalingMode="LowQuality"  Name="Gimage6"  HorizontalAlignment="Left" Margin="0 0 10 0" Width="90" Height="90" Stretch="Uniform" />
-                            <Image RenderOptions.BitmapScalingMode="LowQuality" Name="Gimage7" HorizontalAlignment="Left" Margin="0 0 10 0" Width="90" Height="90" Stretch="Uniform" />
-                            <Image RenderOptions.BitmapScalingMode="LowQuality" Name="Gimage8" HorizontalAlignment="Left" Margin="0 0 10 0" Width="90" Height="90" Stretch="Uniform" />
-                            <Image RenderOptions.BitmapScalingMode="LowQuality" Name="Gimage9" HorizontalAlignment="Left" Margin="0 0 10 0" Width="90" Height="90" Stretch="Uniform" />
-                            <Image RenderOptions.BitmapScalingMode="LowQuality" Name="Gimage10" HorizontalAlignment="Left" Margin="0 0 10 0" Width="90" Height="90" Stretch="Uniform" />
+                            <Image RenderOptions.BitmapScalingMode="LowQuality"  Name="Gimage6"  HorizontalAlignment="Left" Margin="0 0 10 0" Width="90" Height="90" Stretch="Fill" />
+                            <Image RenderOptions.BitmapScalingMode="LowQuality" Name="Gimage7" HorizontalAlignment="Left" Margin="0 0 10 0" Width="90" Height="90" Stretch="Fill" />
+                            <Image RenderOptions.BitmapScalingMode="LowQuality" Name="Gimage8" HorizontalAlignment="Left" Margin="0 0 10 0" Width="90" Height="90" Stretch="Fill" />
+                            <Image RenderOptions.BitmapScalingMode="LowQuality" Name="Gimage9" HorizontalAlignment="Left" Margin="0 0 10 0" Width="90" Height="90" Stretch="Fill" />
+                            <Image RenderOptions.BitmapScalingMode="LowQuality" Name="Gimage10" HorizontalAlignment="Left" Margin="0 0 10 0" Width="90" Height="90" Stretch="Fill" />
                         </StackPanel>
                     </StackPanel>
                 </Border>
@@ -250,18 +250,18 @@
                 <Border   HorizontalAlignment="Center"  BorderBrush="white" Margin="0 2 0 0"   Padding="10"  BorderThickness="1">
                     <StackPanel Name="CI" Orientation="Vertical" Width="550" Height="auto">
                         <StackPanel Orientation="Horizontal" Margin="0 0 0 10">
-                            <Image RenderOptions.BitmapScalingMode="LowQuality" Name="Cimage1" HorizontalAlignment="Left" Margin="0 0 10 0" Width="90" Height="90" Stretch="Uniform" />
-                            <Image RenderOptions.BitmapScalingMode="LowQuality"  Name="Cimage2" HorizontalAlignment="Left" Margin="0 0 10 0" Width="90" Height="90" Stretch="Uniform" />
-                            <Image RenderOptions.BitmapScalingMode="LowQuality" Name="Cimage3" HorizontalAlignment="Left" Margin="0 0 10 0" Width="90" Height="90" Stretch="Uniform" />
-                            <Image RenderOptions.BitmapScalingMode="LowQuality" Name="Cimage4" HorizontalAlignment="Left" Margin="0 0 10 0" Width="90" Height="90" Stretch="Uniform" />
-                            <Image RenderOptions.BitmapScalingMode="LowQuality" Name="Cimage5" HorizontalAlignment="Left" Margin="0 0 10 0" Width="90" Height="90" Stretch="Uniform" />
+                            <Image RenderOptions.BitmapScalingMode="LowQuality" Name="Cimage1" HorizontalAlignment="Left" Margin="0 0 10 0" Width="90" Height="90" Stretch="Fill" />
+                            <Image RenderOptions.BitmapScalingMode="LowQuality"  Name="Cimage2" HorizontalAlignment="Left" Margin="0 0 10 0" Width="90" Height="90" Stretch="Fill" />
+                            <Image RenderOptions.BitmapScalingMode="LowQuality" Name="Cimage3" HorizontalAlignment="Left" Margin="0 0 10 0" Width="90" Height="90" Stretch="Fill" />
+                            <Image RenderOptions.BitmapScalingMode="LowQuality" Name="Cimage4" HorizontalAlignment="Left" Margin="0 0 10 0" Width="90" Height="90" Stretch="Fill" />
+                            <Image RenderOptions.BitmapScalingMode="LowQuality" Name="Cimage5" HorizontalAlignment="Left" Margin="0 0 10 0" Width="90" Height="90" Stretch="Fill" />
                         </StackPanel>
                         <StackPanel Orientation="Horizontal">
-                            <Image RenderOptions.BitmapScalingMode="LowQuality" Name="Cimage6" HorizontalAlignment="Left" Margin="0 0 10 0" Width="90" Height="90" Stretch="Uniform" />
-                            <Image RenderOptions.BitmapScalingMode="LowQuality" Name="Cimage7" HorizontalAlignment="Left" Margin="0 0 10 0" Width="90" Height="90" Stretch="Uniform" />
-                            <Image  RenderOptions.BitmapScalingMode="LowQuality" Name="Cimage8" HorizontalAlignment="Left" Margin="0 0 10 0" Width="90" Height="90" Stretch="Uniform" />
-                            <Image RenderOptions.BitmapScalingMode="LowQuality" Name="Cimage9" HorizontalAlignment="Left" Margin="0 0 10 0" Width="90" Height="90" Stretch="Uniform" />
-                            <Image RenderOptions.BitmapScalingMode="LowQuality" Name="Cimage10" HorizontalAlignment="Left" Margin="0 0 10 0" Width="90" Height="90" Stretch="Uniform" />
+                            <Image RenderOptions.BitmapScalingMode="LowQuality" Name="Cimage6" HorizontalAlignment="Left" Margin="0 0 10 0" Width="90" Height="90" Stretch="Fill" />
+                            <Image RenderOptions.BitmapScalingMode="LowQuality" Name="Cimage7" HorizontalAlignment="Left" Margin="0 0 10 0" Width="90" Height="90" Stretch="Fill" />
+                            <Image  RenderOptions.BitmapScalingMode="LowQuality" Name="Cimage8" HorizontalAlignment="Left" Margin="0 0 10 0" Width="90" Height="90" Stretch="Fill" />
+                            <Image RenderOptions.BitmapScalingMode="LowQuality" Name="Cimage9" HorizontalAlignment="Left" Margin="0 0 10 0" Width="90" Height="90" Stretch="Fill" />
+                            <Image RenderOptions.BitmapScalingMode="LowQuality" Name="Cimage10" HorizontalAlignment="Left" Margin="0 0 10 0" Width="90" Height="90" Stretch="Fill" />
                         </StackPanel>
                     </StackPanel>
                 </Border>
