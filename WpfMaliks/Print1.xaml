@@ -12,11 +12,11 @@
 
     <Grid>
         <Grid.RowDefinitions>
-                <RowDefinition Height="50" ></RowDefinition>
+                <RowDefinition Height="100" ></RowDefinition>
                 <RowDefinition Height="auto"></RowDefinition>
                 <RowDefinition Height="auto"></RowDefinition>
             </Grid.RowDefinitions>
-        <Grid Grid.Row="0" Margin="0 10 0 0">
+        <Grid Grid.Row="0" Margin="0 30 0 0">
             <Grid.ColumnDefinitions>
                 <ColumnDefinition></ColumnDefinition>
                 <ColumnDefinition Width="100"></ColumnDefinition>
@@ -35,7 +35,7 @@
         
             <Grid HorizontalAlignment="Center" VerticalAlignment="Top" Grid.Row="1">
                 <Grid.RowDefinitions>
-                    <RowDefinition Height="45" ></RowDefinition>
+                    <RowDefinition Height="55" ></RowDefinition>
                     <RowDefinition ></RowDefinition>
                     <RowDefinition></RowDefinition>
                     <RowDefinition></RowDefinition>
@@ -49,7 +49,7 @@
                 <Border Grid.Column="0"  Grid.Row="0" VerticalAlignment="Top"   HorizontalAlignment="Left"  BorderBrush="Magenta" BorderThickness="0 0 0 3">
                     <Label FontSize="20" Foreground="white" Content="General :"></Label>
                 </Border>
-                <StackPanel Grid.Row="1"  Grid.Column="0" Margin="0 -10 10 0" Orientation="Vertical" HorizontalAlignment="Center">
+                <StackPanel Grid.Row="1"  Grid.Column="0" Margin="0 10 5 0" Orientation="Vertical" HorizontalAlignment="Center">
                     <Label Content="Vitrine:" HorizontalAlignment="Center" FontSize="18" Foreground="White"></Label>
                     <Border BorderBrush="white"  BorderThickness="1">
                         <materialDesign:RatingBar Padding="50 0 50 0" Width="250" Name="RVitrine" Max="5">
@@ -72,7 +72,7 @@
                         </materialDesign:RatingBar>
                     </Border>
                 </StackPanel>
-                <StackPanel Grid.Row="1" Margin="0 -10 0 0" Grid.Column="1" Orientation="Vertical" HorizontalAlignment="Left">
+                <StackPanel Grid.Row="1" Margin="0 10 0 0" Grid.Column="1" Orientation="Vertical" HorizontalAlignment="Left">
                     <Label Content="Remarks:" HorizontalAlignment="Center" FontSize="18" Foreground="White"></Label>
                     <Border BorderBrush="white"   BorderThickness="1">
                         <TextBox Name="Rvitrine"  Foreground="White" VerticalContentAlignment="Center" FontSize="15" Width="300" Height="30" ></TextBox>
@@ -80,7 +80,7 @@
                 </StackPanel>
                
 
-                <StackPanel Grid.Row="2"  Grid.Column="0" Margin="0 -10 10 0" Orientation="Vertical" HorizontalAlignment="Center">
+                <StackPanel Grid.Row="2"  Grid.Column="0" Margin="0 5 10 0" Orientation="Vertical" HorizontalAlignment="Center">
                     <Label Content="Signage:" Margin="0 10 0 0" HorizontalAlignment="Center" FontSize="18" Foreground="White"></Label>
                     <Border BorderBrush="white"  BorderThickness="1">
                         <materialDesign:RatingBar Padding="50 0 50 0" Width="250" Name="Signage" Max="5">
@@ -102,7 +102,7 @@
                         </materialDesign:RatingBar>
                     </Border>
                 </StackPanel>
-            <StackPanel Grid.Row="2"  Margin="0 0 0 0" Grid.Column="1" Orientation="Vertical" HorizontalAlignment="Left">
+            <StackPanel Grid.Row="2"  Margin="0 15 0 0" Grid.Column="1" Orientation="Vertical" HorizontalAlignment="Left">
                     <Label Content="Remarks:" HorizontalAlignment="Center" FontSize="18" Foreground="White"></Label>
                     <Border BorderBrush="white" BorderThickness="1">
                         <TextBox Name="RSignage" Foreground="White" VerticalContentAlignment="Center" FontSize="15" Width="300" Height="30" ></TextBox>
@@ -110,7 +110,7 @@
                 </StackPanel>
                 
 
-                <StackPanel Grid.Row="3"  Grid.Column="0" Margin="0 0 10 0" Orientation="Vertical" HorizontalAlignment="Center">
+                <StackPanel Grid.Row="3"  Grid.Column="0" Margin="0 10 10 0" Orientation="Vertical" HorizontalAlignment="Center">
                     <Label Content="Branch all in all Organization:" HorizontalAlignment="Center" FontSize="18" Foreground="White"></Label>
                     <Border BorderBrush="white"  BorderThickness="1">
                         <materialDesign:RatingBar Padding="50 0 50 0" Width="250" Name="Branch" Max="5">
@@ -132,7 +132,7 @@
                         </materialDesign:RatingBar>
                     </Border>
                 </StackPanel>
-            <StackPanel Margin="0 0 0 0" Grid.Row="3"  Grid.Column="1" Orientation="Vertical" HorizontalAlignment="Left">
+            <StackPanel Margin="0 10 0 0" Grid.Row="3"  Grid.Column="1" Orientation="Vertical" HorizontalAlignment="Left">
                     <Label Content="Remarks:" HorizontalAlignment="Center" FontSize="18" Foreground="White"></Label>
                     <Border BorderBrush="white"  BorderThickness="1">
                         <TextBox Name="RBranch" Foreground="White" VerticalContentAlignment="Center" FontSize="15" Width="300" Height="30" ></TextBox>
@@ -141,32 +141,15 @@
 
             <StackPanel Grid.Row="4"  Grid.Column="0" Grid.ColumnSpan="2" Margin="0 5 10 0" Orientation="Vertical" HorizontalAlignment="Center">
 
-                <Border   HorizontalAlignment="Center"  BorderBrush="white" Margin="0 2 0 0"   Padding="10"  BorderThickness="1">
-                    <StackPanel Name="IG" Orientation="Vertical" Width="550" Height="auto">
-                        <StackPanel Orientation="Horizontal" Height="auto" Margin="0 0 0 10">
-                            <Image RenderOptions.BitmapScalingMode="LowQuality"   Name="Gimage1" HorizontalAlignment="Left" Margin="0 0 10 0" Width="90" Height="90"  Stretch="Fill" />
-                            <Image RenderOptions.BitmapScalingMode="LowQuality" Name="Gimage2" HorizontalAlignment="Left" Margin="0 0 10 0" Width="90" Height="90" Stretch="Fill" />
-                            <Image RenderOptions.BitmapScalingMode="LowQuality" Name="Gimage3" HorizontalAlignment="Left" Margin="0 0 10 0" Width="90" Height="90" Stretch="Fill" />
-                            <Image RenderOptions.BitmapScalingMode="LowQuality" Name="Gimage4" HorizontalAlignment="Left" Margin="0 0 10 0" Width="90" Height="90" Stretch="Fill" />
-                            <Image RenderOptions.BitmapScalingMode="LowQuality" Name="Gimage5" HorizontalAlignment="Left" Margin="0 0 10 0" Width="90" Height="90" Stretch="Fill" />
-                        </StackPanel>
-                        <StackPanel Orientation="Horizontal" Height="auto">
-                            <Image RenderOptions.BitmapScalingMode="LowQuality"  Name="Gimage6"  HorizontalAlignment="Left" Margin="0 0 10 0" Width="90" Height="90" Stretch="Fill" />
-                            <Image RenderOptions.BitmapScalingMode="LowQuality" Name="Gimage7" HorizontalAlignment="Left" Margin="0 0 10 0" Width="90" Height="90" Stretch="Fill" />
-                            <Image RenderOptions.BitmapScalingMode="LowQuality" Name="Gimage8" HorizontalAlignment="Left" Margin="0 0 10 0" Width="90" Height="90" Stretch="Fill" />
-                            <Image RenderOptions.BitmapScalingMode="LowQuality" Name="Gimage9" HorizontalAlignment="Left" Margin="0 0 10 0" Width="90" Height="90" Stretch="Fill" />
-                            <Image RenderOptions.BitmapScalingMode="LowQuality" Name="Gimage10" HorizontalAlignment="Left" Margin="0 0 10 0" Width="90" Height="90" Stretch="Fill" />
-                        </StackPanel>
-                    </StackPanel>
-                </Border>
+               
             </StackPanel>
 
 
 
         </Grid>
-            <Grid HorizontalAlignment="Center" VerticalAlignment="Top" Grid.Row="3">
+            <Grid HorizontalAlignment="Center" Margin="0 20 0 0" VerticalAlignment="Top" Grid.Row="3">
                 <Grid.RowDefinitions>
-                    <RowDefinition Height="40" ></RowDefinition>
+                    <RowDefinition Height="50" ></RowDefinition>
                     <RowDefinition ></RowDefinition>
                     <RowDefinition></RowDefinition>
                     <RowDefinition></RowDefinition>
@@ -177,10 +160,10 @@
                     <ColumnDefinition Width="auto"></ColumnDefinition>
                  
                 </Grid.ColumnDefinitions>
-                <Border Grid.Column="0"  Grid.Row="0" VerticalAlignment="Top"   HorizontalAlignment="Left"  BorderBrush="Magenta" BorderThickness="0 0 0 3">
+                <Border Grid.Column="0"  Grid.Row="0" VerticalAlignment="Top"   HorizontalAlignment="Left" Margin="0 10 0 0" BorderBrush="Magenta" BorderThickness="0 0 0 3">
                     <Label FontSize="20" Foreground="white" Content="Cashier :"></Label>
                 </Border>
-                <StackPanel Grid.Row="1"  Grid.Column="0" Margin="0 0 10 0" Orientation="Vertical" HorizontalAlignment="Center">
+                <StackPanel Grid.Row="1"  Grid.Column="0" Margin="0 10 10 0" Orientation="Vertical" HorizontalAlignment="Center">
                     <Label Content="Employee:" HorizontalAlignment="Center" FontSize="18" Foreground="White"></Label>
                     <Border BorderBrush="white"      BorderThickness="1">
                         <materialDesign:RatingBar Padding="50 0 50 0"  Width="250" Name="Employee" Max="5">
@@ -202,7 +185,7 @@
                         </materialDesign:RatingBar>
                     </Border>
                 </StackPanel>
-                <StackPanel Grid.Row="1"  Grid.Column="1" Orientation="Vertical" HorizontalAlignment="Left">
+                <StackPanel Grid.Row="1"  Margin="0 10 0 0" Grid.Column="1" Orientation="Vertical" HorizontalAlignment="Left">
                     <Label Content="Remarks:" HorizontalAlignment="Center" FontSize="18" Foreground="White"></Label>
                     <Border BorderBrush="white"  BorderThickness="1">
                         <TextBox Name="REmployee" Foreground="White" VerticalContentAlignment="Center" FontSize="15" Width="300" Height="30" ></TextBox>
@@ -210,7 +193,7 @@
                 </StackPanel>
                
 
-                <StackPanel Grid.Row="2"  Grid.Column="0" Margin="0 0 10 0" Orientation="Vertical" HorizontalAlignment="Center">
+                <StackPanel Grid.Row="2"  Grid.Column="0" Margin="0 10 10 0" Orientation="Vertical" HorizontalAlignment="Center">
                     <Label Content="Organization Section:" HorizontalAlignment="Center" FontSize="18" Foreground="White"></Label>
                     <Border BorderBrush="white"  BorderThickness="1">
                         <materialDesign:RatingBar Padding="50 0 50 0" Width="250" Name="OrgSection" Max="5">
@@ -232,7 +215,7 @@
                         </materialDesign:RatingBar>
                     </Border>
                 </StackPanel>
-                <StackPanel Grid.Row="2"  Grid.Column="1" Orientation="Vertical" HorizontalAlignment="Left">
+                <StackPanel Grid.Row="2" Margin="0 10 0 0"  Grid.Column="1" Orientation="Vertical" HorizontalAlignment="Left">
                     <Label Content="Remarks:" HorizontalAlignment="Center" FontSize="18" Foreground="White"></Label>
                     <Border BorderBrush="white"   BorderThickness="1">
                         <TextBox Name="ROrgSection" Foreground="White" VerticalContentAlignment="Center" FontSize="15" Width="300" Height="30" ></TextBox>
@@ -240,31 +223,13 @@
                 </StackPanel>
                
 
-                <StackPanel Grid.Row="3"  Grid.Column="0" Grid.ColumnSpan="2" Margin="0 10 10 0" Orientation="Vertical" HorizontalAlignment="Center">
+                <StackPanel Grid.Row="3"  Grid.Column="0" Grid.ColumnSpan="2" Margin="0 20 10 0" Orientation="Vertical" HorizontalAlignment="Center">
                     <Label Content="Overall Remarks:" HorizontalAlignment="Center" FontSize="18" Foreground="White"></Label>
                     <Border BorderBrush="white" Margin="0 2 0 0"   Padding="2"  BorderThickness="1">
                         <TextBox Name="OverRemarks"  Foreground="White" AcceptsReturn="True" TextWrapping="Wrap" AcceptsTab="True" FontSize="15" VerticalContentAlignment="Top" Width="550" Height="80" ></TextBox>
                     </Border>
                 </StackPanel>
             <StackPanel Grid.Row="4"  Grid.Column="0" Grid.ColumnSpan="2" Margin="0 10 10 0" Orientation="Vertical" HorizontalAlignment="Center">
-                <Border   HorizontalAlignment="Center"  BorderBrush="white" Margin="0 2 0 0"   Padding="10"  BorderThickness="1">
-                    <StackPanel Name="CI" Orientation="Vertical" Width="550" Height="auto">
-                        <StackPanel Orientation="Horizontal" Margin="0 0 0 10">
-                            <Image RenderOptions.BitmapScalingMode="LowQuality" Name="Cimage1" HorizontalAlignment="Left" Margin="0 0 10 0" Width="90" Height="90" Stretch="Fill" />
-                            <Image RenderOptions.BitmapScalingMode="LowQuality"  Name="Cimage2" HorizontalAlignment="Left" Margin="0 0 10 0" Width="90" Height="90" Stretch="Fill" />
-                            <Image RenderOptions.BitmapScalingMode="LowQuality" Name="Cimage3" HorizontalAlignment="Left" Margin="0 0 10 0" Width="90" Height="90" Stretch="Fill" />
-                            <Image RenderOptions.BitmapScalingMode="LowQuality" Name="Cimage4" HorizontalAlignment="Left" Margin="0 0 10 0" Width="90" Height="90" Stretch="Fill" />
-                            <Image RenderOptions.BitmapScalingMode="LowQuality" Name="Cimage5" HorizontalAlignment="Left" Margin="0 0 10 0" Width="90" Height="90" Stretch="Fill" />
-                        </StackPanel>
-                        <StackPanel Orientation="Horizontal">
-                            <Image RenderOptions.BitmapScalingMode="LowQuality" Name="Cimage6" HorizontalAlignment="Left" Margin="0 0 10 0" Width="90" Height="90" Stretch="Fill" />
-                            <Image RenderOptions.BitmapScalingMode="LowQuality" Name="Cimage7" HorizontalAlignment="Left" Margin="0 0 10 0" Width="90" Height="90" Stretch="Fill" />
-                            <Image  RenderOptions.BitmapScalingMode="LowQuality" Name="Cimage8" HorizontalAlignment="Left" Margin="0 0 10 0" Width="90" Height="90" Stretch="Fill" />
-                            <Image RenderOptions.BitmapScalingMode="LowQuality" Name="Cimage9" HorizontalAlignment="Left" Margin="0 0 10 0" Width="90" Height="90" Stretch="Fill" />
-                            <Image RenderOptions.BitmapScalingMode="LowQuality" Name="Cimage10" HorizontalAlignment="Left" Margin="0 0 10 0" Width="90" Height="90" Stretch="Fill" />
-                        </StackPanel>
-                    </StackPanel>
-                </Border>
             </StackPanel>
 
 

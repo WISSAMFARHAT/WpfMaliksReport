@@ -24,7 +24,7 @@ namespace WpfMaliks
         int sources = 0;
         int sources1 = 0;
         public Print2(int RSEmployees, string TRSEmployees, int RSorgaSections, string TRSorgaSections, string TOverRemark1,
-            int RServiceEmployees, string TRServiceEmployees, int RServiceOrgSections, string TRServiceOrgSections, string TOverRemark2, ArrayList all)
+            int RServiceEmployees, string TRServiceEmployees, int RServiceOrgSections, string TRServiceOrgSections, string TOverRemark2)
         {
             InitializeComponent();
             RSEmployee.Value=RSEmployees;
@@ -37,7 +37,7 @@ namespace WpfMaliks
             OrgSection.Value = RServiceOrgSections;
             ROrgSection.Text = TRServiceOrgSections;
             OverRemarks2.Text = TOverRemark2;
-            Gimage1.Visibility = Visibility.Hidden;
+            /*Gimage1.Visibility = Visibility.Hidden;
             Gimage2.Visibility = Visibility.Hidden;
             Gimage3.Visibility = Visibility.Hidden;
             Gimage4.Visibility = Visibility.Hidden;
@@ -60,7 +60,7 @@ namespace WpfMaliks
             Cimage2.Visibility = Visibility.Hidden;
             Cimage3.Visibility = Visibility.Hidden;
             Cimage4.Visibility = Visibility.Hidden;
-
+            
             for (int i = 0; i < all.Count; i++)
             {
                 if (all[i].ToString().Contains("ISEmplyee") || all[i].ToString().Contains("ISOSection") )
@@ -193,7 +193,7 @@ namespace WpfMaliks
                     }
 
                 }
-            }
+            }*/
 
         }
     }

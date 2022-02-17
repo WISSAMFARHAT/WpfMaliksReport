@@ -25,7 +25,7 @@ namespace WpfMaliks
         int sources = 0;
         int sources1 = 0;
         public Print1(string TxtBranch,int RatVitrine,string txtVitrine,int RatSignage,string txtSignage,int RatBranch,string txtBranch,int RatEmployee,string txtEmployee,
-            int RatOrgSection,string txtOrgSection,string txtOverRemarks,ArrayList all)
+            int RatOrgSection,string txtOrgSection,string txtOverRemarks)
         {
             InitializeComponent();
             txtbranch.Text = TxtBranch;
@@ -35,7 +35,7 @@ namespace WpfMaliks
             RSignage.Text = txtSignage;
             Branch.Value = RatBranch;
             RBranch.Text = txtBranch;
-            Gimage1.Visibility = Visibility.Hidden;
+           /* Gimage1.Visibility = Visibility.Hidden;
             Gimage2.Visibility = Visibility.Hidden;
             Gimage3.Visibility = Visibility.Hidden;
             Gimage4.Visibility = Visibility.Hidden;
@@ -44,13 +44,13 @@ namespace WpfMaliks
             Gimage7.Visibility = Visibility.Hidden;
             Gimage8.Visibility = Visibility.Hidden;
             Gimage9.Visibility = Visibility.Hidden;
-            Gimage10.Visibility = Visibility.Hidden;
+            Gimage10.Visibility = Visibility.Hidden;*/
             Employee.Value = RatEmployee;
             REmployee.Text = txtEmployee;
             OrgSection.Value = RatOrgSection;
             ROrgSection.Text = txtOrgSection;
             OverRemarks.Text = txtOverRemarks;
-            Cimage1.Visibility = Visibility.Hidden;
+            /*Cimage1.Visibility = Visibility.Hidden;
             Cimage2.Visibility = Visibility.Hidden;
             Cimage3.Visibility = Visibility.Hidden;
             Cimage4.Visibility = Visibility.Hidden;
@@ -195,7 +195,7 @@ namespace WpfMaliks
                        }
 
                    }
-               }
+               }*/
         }
     }
 }
