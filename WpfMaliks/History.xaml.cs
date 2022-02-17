@@ -282,7 +282,7 @@ namespace WpfMaliks
                             img.Source = new BitmapImage(new Uri(@"/Images/pdf.png", UriKind.Relative));
                         }else
                         {
-                            img.Source = new BitmapImage(new Uri(@"/Images/imgicon.jpg", UriKind.Relative));
+                            img.Source = new BitmapImage(new Uri(@"/Images/imgicon.png", UriKind.Relative));
                         }
                         img.Width = 100;
                         img.Height = 100;
