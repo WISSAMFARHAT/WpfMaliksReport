@@ -13,9 +13,9 @@
             <RowDefinition Height="100"></RowDefinition>
             <RowDefinition></RowDefinition>
         </Grid.RowDefinitions>
-        <Border Grid.Row="0" Margin="30" Width="90" HorizontalAlignment="Left" Padding="0 7 0 0" BorderBrush="Magenta" BorderThickness="0 0 0 3">
+        <Border Grid.Row="0" Margin="30" Width="90" HorizontalAlignment="Left" Padding="0 7 0 0" BorderBrush="#E61F4B" BorderThickness="0 0 0 3">
 
-            <TextBlock FontSize="20" Foreground="white" Text="PROFILE"></TextBlock>
+            <TextBlock FontSize="20" Foreground="{DynamicResource colortext}" Text="PROFILE"></TextBlock>
         </Border>
         <Grid Grid.Row="1" VerticalAlignment="top">
             <Grid.ColumnDefinitions>
@@ -24,11 +24,11 @@
             </Grid.ColumnDefinitions>
             <StackPanel Orientation="Vertical"  Grid.Column="0">
             <Image Name="imge"  Source="images/user.png"  HorizontalAlignment="Center" Width="200" VerticalAlignment="Center" />
-            <TextBlock Text="user" Name="user" FontSize="25" Margin="0 10 0 0 " Foreground="white" HorizontalAlignment="Center"></TextBlock>
+            <TextBlock Text="user" Name="user" FontSize="25" Margin="0 10 0 0 " Foreground="{DynamicResource colortext}" HorizontalAlignment="Center"></TextBlock>
 
             </StackPanel>
             <StackPanel Orientation="Vertical" Grid.Column="1">
-                <Border BorderBrush="White" BorderThickness="0 0 0 1" Margin="0 5 0 0" Padding="0 0 0 5" HorizontalAlignment="Left" Width="250">
+                <Border BorderBrush="{DynamicResource colortext}" BorderThickness="0 0 0 1" Margin="0 5 0 0" Padding="0 0 0 5" HorizontalAlignment="Left" Width="250">
                     <StackPanel Orientation="Vertical" >
                         <Label Name="l1" Content="Allam Al Jurdy" FontSize="25" Foreground="#AE4E31"></Label>
 
@@ -36,7 +36,7 @@
 
                     </StackPanel>
                 </Border>
-                <Border BorderBrush="White" BorderThickness="0 0 0 1"  Margin="0 5 0 0" Padding="0 0 0 5" HorizontalAlignment="Left" Width="250">
+                <Border BorderBrush="{DynamicResource colortext}" BorderThickness="0 0 0 1"  Margin="0 5 0 0" Padding="0 0 0 5" HorizontalAlignment="Left" Width="250">
                     <StackPanel Orientation="Vertical" Margin="0 2">
                         <Label Name="l2"  Content="Ali Yassin" FontSize="25" Foreground="#656768"></Label>
 
@@ -44,7 +44,7 @@
 
                     </StackPanel>
                 </Border>
-                <Border BorderBrush="White" BorderThickness="0 0 0 1" Margin="0 5 0 0" Padding="0 0 0 5" HorizontalAlignment="Left" Width="250">
+                <Border BorderBrush="{DynamicResource colortext}" BorderThickness="0 0 0 1" Margin="0 5 0 0" Padding="0 0 0 5" HorizontalAlignment="Left" Width="250">
                     <StackPanel Orientation="Vertical" Margin="0 2">
                         <Label Name="l3" Content="Shadi Farhat" FontSize="25" Foreground="#2DB34A"></Label>
 
@@ -52,7 +52,7 @@
 
                     </StackPanel>
                 </Border>
-                <Border Name="border" BorderBrush="White" BorderThickness="0 0 0 1" Margin="0 5 0 0" Padding="0 0 0 5" HorizontalAlignment="Left" Width="250">
+                <Border Name="border" BorderBrush="{DynamicResource colortext}" BorderThickness="0 0 0 1" Margin="0 5 0 0" Padding="0 0 0 5" HorizontalAlignment="Left" Width="250">
                     <StackPanel  Orientation="Vertical" Margin="0 2">
                         <Label Name="l4" Content="Mohamad Faraa" FontSize="25" Foreground="#EF3835"></Label>
 

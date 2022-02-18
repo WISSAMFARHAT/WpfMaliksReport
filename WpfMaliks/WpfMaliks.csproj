@@ -115,6 +115,9 @@
     <Compile Include="Report_1.xaml.cs">
       <DependentUpon>Report_1.xaml</DependentUpon>
     </Compile>
+    <Compile Include="ToogleButton.xaml.cs">
+      <DependentUpon>ToogleButton.xaml</DependentUpon>
+    </Compile>
     <Page Include="History.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -170,6 +173,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Report_1.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="ToogleButton.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

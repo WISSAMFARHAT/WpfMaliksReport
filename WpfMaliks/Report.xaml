@@ -11,32 +11,35 @@
     <Grid>
         
         <Grid.RowDefinitions>
-            <RowDefinition></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
             <RowDefinition Height="60"></RowDefinition>
         </Grid.RowDefinitions>
-        <Frame Name="framereport" Grid.Row="0"></Frame>
-        <Grid Grid.Row="1" >
+        <ScrollViewer Grid.Row="0" FocusVisualStyle="{x:Null}" BorderBrush="Transparent" Width="auto" Height="auto" ScrollViewer.VerticalScrollBarVisibility="Auto">
+        <Frame Name="framereport" Width="auto" Height="auto" ScrollViewer.CanContentScroll="True"   HorizontalContentAlignment="Stretch" VerticalContentAlignment="Stretch"    
+         ScrollViewer.VerticalScrollBarVisibility="Visible" ></Frame>
+        </ScrollViewer>
+        <Grid Grid.Row="1"  >
             <Grid.ColumnDefinitions>
                 <ColumnDefinition></ColumnDefinition>
                 <ColumnDefinition></ColumnDefinition>
                 <ColumnDefinition></ColumnDefinition>
             </Grid.ColumnDefinitions>
-            <Button Grid.Column="0" Name="BPreview" Click="previewframe" Style="{StaticResource RoundCornermauve}" Width="100" Margin="80 0 0 0" Cursor="Hand" HorizontalAlignment="Left" VerticalAlignment="Top" Content="Previous"></Button>
+            <Button Grid.Column="0" Name="BPreview" Click="previewframe" Style="{StaticResource RoundCornermauve}"  FocusVisualStyle="{x:Null}" Width="100" Margin="80 0 0 0" Cursor="Hand" HorizontalAlignment="Left" VerticalAlignment="Top" Content="Previous"></Button>
 
-            <Border  Grid.Column="1" VerticalAlignment="Top"  HorizontalAlignment="Center" Width="40" Height="40" BorderBrush="Magenta" BorderThickness="1" CornerRadius="50">
-                <Label Name="Number" Content="1/3" FontSize="20" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Foreground="White">
+            <Border  Grid.Column="1" VerticalAlignment="Top"  HorizontalAlignment="Center" Width="40" Height="40" BorderBrush="#E61F4B" BorderThickness="1" CornerRadius="50">
+                <Label Name="Number" Content="1/3" FontSize="20" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Foreground="{DynamicResource colortext}">
                 </Label>
             </Border>
-            <Button Grid.Column="2" Name="Bnext"  Click="nextframe" Style="{StaticResource RoundCornermauve}" Width="100" Margin="0 0 80 0" Cursor="Hand" HorizontalAlignment="Right" VerticalAlignment="Top" Content="Next"></Button>
+            <Button Grid.Column="2" Name="Bnext"  Click="nextframe" Style="{StaticResource RoundCornermauve}" Width="100" Margin="0 0 80 0" Cursor="Hand"  HorizontalAlignment="Right" VerticalAlignment="Top" Content="Next"></Button>
         </Grid>
-        <Canvas Name="canvas"  HorizontalAlignment="Right" Margin="0 100 400 0">
+        <Canvas Name="canvas"  Width="300"  HorizontalAlignment="Right" Margin="0 100 0 0">
             <Grid >
                 <Grid.RowDefinitions>
                     <RowDefinition Height="150"></RowDefinition>
                     <RowDefinition></RowDefinition>
                 </Grid.RowDefinitions>
-                <Button Grid.Row="0" Style="{StaticResource RoundCornertranspartExport}" Width="150" Height="100" HorizontalAlignment="Left"  Cursor="Hand"  VerticalAlignment="Center" Content="Export" Click="Button_Click_1" ></Button>
-                <Button Grid.Row="1"  Style="{StaticResource RoundCornertranspartClear}" Width="150" Height="100" HorizontalAlignment="Left"  Cursor="Hand"  VerticalAlignment="Center" Content="Clear" Click="Button_Click" />
+                <Button Grid.Row="0" Style="{StaticResource RoundCornertranspartExport}" Width="150" Height="100" HorizontalAlignment="Left" Cursor="Hand"  VerticalAlignment="Center" Content="Export" Click="Button_Click_1" ></Button>
+                <Button Grid.Row="1"  Style="{StaticResource RoundCornertranspartClear}" Width="150" Height="100" HorizontalAlignment="Left"   Cursor="Hand"  VerticalAlignment="Center" Content="Clear" Click="Button_Click" />
             </Grid>
         </Canvas>
 

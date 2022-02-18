@@ -6,7 +6,7 @@
       xmlns:local="clr-namespace:WpfMaliks"
       xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
       mc:Ignorable="d" 
-      d:DesignHeight="450" d:DesignWidth="800"
+      d:DesignHeight="450" d:DesignWidth="800" 
       Title="Report1">
     <Grid>
         <Grid.RowDefinitions>
@@ -19,18 +19,18 @@
                 <RowDefinition Height="auto"></RowDefinition>
                 <RowDefinition Height="auto"></RowDefinition>
             </Grid.RowDefinitions>
-            <Border Grid.Row="0" BorderBrush="white" BorderThickness="0 0 0 1"  >
+            <Border Grid.Row="0" BorderBrush="{DynamicResource colortext}" BorderThickness="0 0 0 1"  >
                 <Grid  Margin="0 8 0 0">
-                    <Label Content="Branch Visit Report" FontSize="20"  Foreground="white"></Label>
+                    <Label Content="Branch Visit Report" FontSize="20"  Foreground="{DynamicResource colortext}"></Label>
                     <StackPanel HorizontalAlignment="Right" Orientation="Horizontal">
-                        <Label Content="Conducted on :" FontSize="20" Foreground="white" ></Label>
-                        <Label Content="Feb 7,2022 9:34 AM" Name="date" FontSize="20" Foreground="white" ></Label>
+                        <Label Content="Conducted on :" FontSize="20" Foreground="{DynamicResource colortext}" ></Label>
+                        <Label Content="Feb 7,2022 9:34 AM" Name="date" FontSize="20" Foreground="{DynamicResource colortext}" ></Label>
                     </StackPanel>
                 </Grid>
             </Border>
             <StackPanel Orientation="Horizontal" Grid.Row="1" HorizontalAlignment="Right" Margin="0 10 0 0">
                 <Border Height="35" Width="320" BorderBrush="Gray" VerticalAlignment="Top" BorderThickness="1"  CornerRadius="20" Grid.Row="1">
-                    <TextBox Foreground="white" Name="TSBranch" Width="310" Height="35" Padding="10 0 0 0" FontSize="20" VerticalAlignment="Center">    
+                    <TextBox Foreground="{DynamicResource colortext}" Name="TSBranch" Width="310" Height="35" Padding="10 0 0 0" FontSize="20" VerticalAlignment="Center">    
                     <materialDesign:HintAssist.Hint>
                             <StackPanel Orientation="Horizontal" Margin="0 0 0 0">
                                 <materialDesign:PackIcon Kind="SourceBranch" VerticalAlignment="Center" />
@@ -41,7 +41,7 @@
 
                 </Border>
             </StackPanel>
-            <Border VerticalAlignment="Top" Grid.Row="2" BorderBrush="White" Padding="0 0 0 10" BorderThickness="0 0 0 1">
+            <Border VerticalAlignment="Top" Grid.Row="2" BorderBrush="{DynamicResource colortext}" Padding="0 0 0 10" BorderThickness="0 0 0 1">
                 
             <Grid >
                 
@@ -57,12 +57,12 @@
                     <ColumnDefinition Width="auto"></ColumnDefinition>
                     <ColumnDefinition></ColumnDefinition>
                 </Grid.ColumnDefinitions>
-                <Border Grid.Column="0"  Grid.Row="0" VerticalAlignment="Top"   HorizontalAlignment="Left"  BorderBrush="Magenta" BorderThickness="0 0 0 3">
-                    <Label FontSize="20" Foreground="white" Content="General :"></Label>
+                    <Border Grid.Column="0"  Grid.Row="0" VerticalAlignment="Top"   HorizontalAlignment="Left"  BorderBrush="#E61F4B" BorderThickness="0 0 0 3">
+                    <Label FontSize="20" Foreground="{DynamicResource colortext}" Content="General :"></Label>
                 </Border>
                 <StackPanel Grid.Row="1"  Grid.Column="0" Margin="0 0 10 0" Orientation="Vertical" HorizontalAlignment="Center">
-                    <Label Content="Vitrine:" HorizontalAlignment="Center" FontSize="18" Foreground="White"></Label>
-                    <Border BorderBrush="white"  BorderThickness="1">
+                    <Label Content="Vitrine:" HorizontalAlignment="Center" FontSize="18" Foreground="{DynamicResource colortext}"></Label>
+                    <Border BorderBrush="{DynamicResource colortext}"  BorderThickness="1">
                         <materialDesign:RatingBar Padding="50 0 50 0" Width="250" Name="RVitrine" Max="5">
                             
                                 <materialDesign:RatingBar.ValueItemTemplate>
@@ -72,7 +72,7 @@
                                     Kind="Star"
                                     Cursor="Hand"
                                     Height="30"
-                                    Foreground="Gold"
+                                    Foreground="{DynamicResource colorrating}"
                                     FocusVisualStyle="{x:Null}"
                                    
                                     Width="30"/>
@@ -84,20 +84,20 @@
                     </Border>
                 </StackPanel>
                 <StackPanel Grid.Row="1"  Grid.Column="1" Orientation="Vertical" HorizontalAlignment="Left">
-                    <Label Content="Remarks:" HorizontalAlignment="Center" FontSize="18" Foreground="White"></Label>
-                    <Border BorderBrush="white"   BorderThickness="1">
-                        <TextBox Name="Rvitrine"  Foreground="White" VerticalContentAlignment="Center" FontSize="15" Width="300" Height="30" > </TextBox>
+                    <Label Content="Remarks:" HorizontalAlignment="Center" FontSize="18" Foreground="{DynamicResource colortext}"></Label>
+                    <Border BorderBrush="{DynamicResource colortext}"   BorderThickness="1">
+                        <TextBox Name="Rvitrine"  Foreground="{DynamicResource colortext}" VerticalContentAlignment="Center" FontSize="15" Width="300" Height="30" > </TextBox>
                     </Border>
                 </StackPanel>
                 <Button Grid.Row="1" Grid.Column="2" Click="upload" CommandParameter="Tvitrine Cvitrine Ivitrine" Style="{StaticResource RoundCornertranspart}" Width="100" Height="30" HorizontalAlignment="Left"  Cursor="Hand" Margin="10 30 0 0" VerticalAlignment="Center" Content="Upload"></Button>
                 <StackPanel Orientation="Horizontal" Grid.Row="1" VerticalAlignment="Center" Margin="10 20 0 0" HorizontalAlignment="left" Grid.Column="3">
                     <Label FontSize="26" Name="Cvitrine" Content="" VerticalAlignment="Center" Foreground="Green"></Label>
-                    <TextBlock Text="" Name="Tvitrine" FontSize="20"  Foreground="white" VerticalAlignment="Center" ></TextBlock>
+                    <TextBlock Text="" Name="Tvitrine" FontSize="20"  Foreground="{DynamicResource colortext}" VerticalAlignment="Center" ></TextBlock>
                 </StackPanel>
 
                 <StackPanel Grid.Row="2"  Grid.Column="0" Margin="0 0 10 0" Orientation="Vertical" HorizontalAlignment="Center">
-                    <Label Content="Signage:" HorizontalAlignment="Center" FontSize="18" Foreground="White"></Label>
-                    <Border BorderBrush="white"  BorderThickness="1">
+                    <Label Content="Signage:" HorizontalAlignment="Center" FontSize="18" Foreground="{DynamicResource colortext}"></Label>
+                    <Border BorderBrush="{DynamicResource colortext}"  BorderThickness="1">
                         <materialDesign:RatingBar Padding="50 0 50 0" Width="250" Name="Signage" Max="5">
                             <materialDesign:RatingBar.ValueItemTemplate>
                                 <DataTemplate DataType="system:Int32">
@@ -106,7 +106,7 @@
                                     Kind="Star"
                                     Cursor="Hand"
                                     Height="30"
-                                    Foreground="Gold"
+                                    Foreground="{DynamicResource colorrating}"
                                             
                                     FocusVisualStyle="{x:Null}"
                                     Width="30"/>
@@ -118,20 +118,20 @@
                     </Border>
                 </StackPanel>
                 <StackPanel Grid.Row="2"  Grid.Column="1" Orientation="Vertical" HorizontalAlignment="Left">
-                    <Label Content="Remarks:" HorizontalAlignment="Center" FontSize="18" Foreground="White"></Label>
-                    <Border BorderBrush="white" BorderThickness="1">
-                        <TextBox Name="RSignage" Foreground="White" VerticalContentAlignment="Center" FontSize="15" Width="300" Height="30" ></TextBox>
+                    <Label Content="Remarks:" HorizontalAlignment="Center" FontSize="18" Foreground="{DynamicResource colortext}"></Label>
+                    <Border BorderBrush="{DynamicResource colortext}" BorderThickness="1">
+                        <TextBox Name="RSignage" Foreground="{DynamicResource colortext}" VerticalContentAlignment="Center" FontSize="15" Width="300" Height="30" ></TextBox>
                     </Border>
                 </StackPanel>
                 <Button Grid.Row="2" Grid.Column="2" Click="upload" CommandParameter="TSignage CSignage ISignage" Style="{StaticResource RoundCornertranspart}" Width="100" Height="30" HorizontalAlignment="Left"  Cursor="Hand" Margin="10 30 0 0" VerticalAlignment="Center" Content="Upload"></Button>
                 <StackPanel Orientation="Horizontal" Grid.Row="2" VerticalAlignment="Center" Margin="10 20 0 0" HorizontalAlignment="left" Grid.Column="3">
                     <Label FontSize="26" Name="CSignage"  Content="" VerticalAlignment="Center" Foreground="Green"></Label>
-                    <TextBlock Text="" Name="TSignage" FontSize="20" Foreground="white" VerticalAlignment="Center" ></TextBlock>
+                    <TextBlock Text="" Name="TSignage" FontSize="20" Foreground="{DynamicResource colortext}" VerticalAlignment="Center" ></TextBlock>
                 </StackPanel>
 
                 <StackPanel Grid.Row="3"  Grid.Column="0" Margin="0 0 10 0" Orientation="Vertical" HorizontalAlignment="Center">
-                    <Label Content="Branch all in all Organization:" HorizontalAlignment="Center" FontSize="18" Foreground="White"></Label>
-                    <Border BorderBrush="white"  BorderThickness="1">
+                    <Label Content="Branch all in all Organization:" HorizontalAlignment="Center" FontSize="18" Foreground="{DynamicResource colortext}"></Label>
+                    <Border BorderBrush="{DynamicResource colortext}"  BorderThickness="1">
                         <materialDesign:RatingBar Padding="50 0 50 0" Width="250" Name="Branch" Max="5">
                             <materialDesign:RatingBar.ValueItemTemplate>
                                 <DataTemplate DataType="system:Int32">
@@ -140,7 +140,7 @@
                                     Kind="Star"
                                     Cursor="Hand"
                                     Height="30"
-                                    Foreground="Gold"
+                                    Foreground="{DynamicResource colorrating}"
                                             
                                     FocusVisualStyle="{x:Null}"
                                     Width="30"/>
@@ -152,15 +152,15 @@
                     </Border>
                 </StackPanel>
                 <StackPanel Grid.Row="3"  Grid.Column="1" Orientation="Vertical" HorizontalAlignment="Left">
-                    <Label Content="Remarks:" HorizontalAlignment="Center" FontSize="18" Foreground="White"></Label>
-                    <Border BorderBrush="white"  BorderThickness="1">
-                        <TextBox Name="RBranch" Foreground="White" VerticalContentAlignment="Center" FontSize="15" Width="300" Height="30" ></TextBox>
+                    <Label Content="Remarks:" HorizontalAlignment="Center" FontSize="18" Foreground="{DynamicResource colortext}"></Label>
+                    <Border BorderBrush="{DynamicResource colortext}"  BorderThickness="1">
+                        <TextBox Name="RBranch" Foreground="{DynamicResource colortext}" VerticalContentAlignment="Center" FontSize="15" Width="300" Height="30" ></TextBox>
                     </Border>
                 </StackPanel>
                 <Button Grid.Row="3" Grid.Column="2" Click="upload" CommandParameter="TBranch CBranch IBranch" Style="{StaticResource RoundCornertranspart}" Width="100" Height="30" HorizontalAlignment="Left"  Cursor="Hand" Margin="10 30 0 0" VerticalAlignment="Center" Content="Upload"></Button>
                 <StackPanel Orientation="Horizontal" Grid.Row="3" VerticalAlignment="Center" Margin="10 20 0 0" HorizontalAlignment="left" Grid.Column="3">
                     <Label FontSize="26" Content="" Name="CBranch" VerticalAlignment="Center" Foreground="Green"></Label>
-                    <TextBlock Text="" FontSize="20" Name="TBranch" Foreground="white" VerticalAlignment="Center" ></TextBlock>
+                    <TextBlock Text="" FontSize="20" Name="TBranch" Foreground="{DynamicResource colortext}" VerticalAlignment="Center" ></TextBlock>
                 </StackPanel>
 
 
@@ -179,12 +179,12 @@
                     <ColumnDefinition Width="auto"></ColumnDefinition>
                     <ColumnDefinition></ColumnDefinition>
                 </Grid.ColumnDefinitions>
-                <Border Grid.Column="0"  Grid.Row="0" VerticalAlignment="Top"   HorizontalAlignment="Left"  BorderBrush="Magenta" BorderThickness="0 0 0 3">
-                    <Label FontSize="20" Foreground="white" Content="Cashier :"></Label>
+                <Border Grid.Column="0"  Grid.Row="0" VerticalAlignment="Top"   HorizontalAlignment="Left"  BorderBrush="#E61F4B" BorderThickness="0 0 0 3">
+                    <Label FontSize="20" Foreground="{DynamicResource colortext}" Content="Cashier :"></Label>
                 </Border>
                 <StackPanel Grid.Row="1"  Grid.Column="0" Margin="0 0 10 0" Orientation="Vertical" HorizontalAlignment="Center">
-                    <Label Content="Employee:" HorizontalAlignment="Center" FontSize="18" Foreground="White"></Label>
-                    <Border BorderBrush="white"      BorderThickness="1">
+                    <Label Content="Employee:" HorizontalAlignment="Center" FontSize="18" Foreground="{DynamicResource colortext}"></Label>
+                    <Border BorderBrush="{DynamicResource colortext}"      BorderThickness="1">
                         <materialDesign:RatingBar Padding="50 0 50 0"  Width="250" Name="Employee" Max="5">
                             <materialDesign:RatingBar.ValueItemTemplate>
                                 <DataTemplate DataType="system:Int32">
@@ -193,7 +193,7 @@
                                     Kind="Star"
                                     Cursor="Hand"
                                     Height="30"
-                                    Foreground="Gold"
+                                    Foreground="{DynamicResource colorrating}"
                                             
                                     FocusVisualStyle="{x:Null}"
                                     Width="30"/>
@@ -205,20 +205,20 @@
                     </Border>
                 </StackPanel>
                 <StackPanel Grid.Row="1"  Grid.Column="1" Orientation="Vertical" HorizontalAlignment="Left">
-                    <Label Content="Remarks:" HorizontalAlignment="Center" FontSize="18" Foreground="White"></Label>
-                    <Border BorderBrush="white"  BorderThickness="1">
-                        <TextBox Name="REmployee" Foreground="White" VerticalContentAlignment="Center" FontSize="15" Width="300" Height="30" ></TextBox>
+                    <Label Content="Remarks:" HorizontalAlignment="Center" FontSize="18" Foreground="{DynamicResource colortext}"></Label>
+                    <Border BorderBrush="{DynamicResource colortext}"  BorderThickness="1">
+                        <TextBox Name="REmployee" Foreground="{DynamicResource colortext}" VerticalContentAlignment="Center" FontSize="15" Width="300" Height="30" ></TextBox>
                     </Border>
                 </StackPanel>
                 <Button Grid.Row="1" Grid.Column="2" Click="upload" CommandParameter="TEmployee CEmployee IEmployee" Style="{StaticResource RoundCornertranspart}" Width="100" Height="30" HorizontalAlignment="Left"  Cursor="Hand" Margin="10 30 0 0" VerticalAlignment="Center" Content="Upload"></Button>
                 <StackPanel Orientation="Horizontal" Grid.Row="1" VerticalAlignment="Center" Margin="10 20 0 0" HorizontalAlignment="left" Grid.Column="3">
                     <Label FontSize="26" Name="CEmployee" Content="" VerticalAlignment="Center" Foreground="Green"></Label>
-                    <TextBlock Text="" Name="TEmployee" FontSize="20" Foreground="white" VerticalAlignment="Center" ></TextBlock>
+                    <TextBlock Text="" Name="TEmployee" FontSize="20" Foreground="{DynamicResource colortext}" VerticalAlignment="Center" ></TextBlock>
                 </StackPanel>
 
                 <StackPanel Grid.Row="2"  Grid.Column="0" Margin="0 0 10 0" Orientation="Vertical" HorizontalAlignment="Center">
-                    <Label Content="Organization Section:" HorizontalAlignment="Center" FontSize="18" Foreground="White"></Label>
-                    <Border BorderBrush="white"  BorderThickness="1">
+                    <Label Content="Organization Section:" HorizontalAlignment="Center" FontSize="18" Foreground="{DynamicResource colortext}"></Label>
+                    <Border BorderBrush="{DynamicResource colortext}"  BorderThickness="1">
                         <materialDesign:RatingBar Padding="50 0 50 0" Width="250" Name="OrgSection" Max="5">
                             <materialDesign:RatingBar.ValueItemTemplate>
                                 <DataTemplate DataType="system:Int32">
@@ -227,7 +227,7 @@
                                     Kind="Star"
                                     Cursor="Hand"
                                     Height="30"
-                                    Foreground="Gold"
+                                    Foreground="{DynamicResource colorrating}"
                                             
                                     FocusVisualStyle="{x:Null}"
                                     Width="30"/>
@@ -239,21 +239,21 @@
                     </Border>
                 </StackPanel>
                 <StackPanel Grid.Row="2"  Grid.Column="1" Orientation="Vertical" HorizontalAlignment="Left">
-                    <Label Content="Remarks:" HorizontalAlignment="Center" FontSize="18" Foreground="White"></Label>
-                    <Border BorderBrush="white"   BorderThickness="1">
-                        <TextBox Name="ROrgSection" Foreground="White" VerticalContentAlignment="Center" FontSize="15" Width="300" Height="30" ></TextBox>
+                    <Label Content="Remarks:" HorizontalAlignment="Center" FontSize="18" Foreground="{DynamicResource colortext}"></Label>
+                    <Border BorderBrush="{DynamicResource colortext}"   BorderThickness="1">
+                        <TextBox Name="ROrgSection" Foreground="{DynamicResource colortext}" VerticalContentAlignment="Center" FontSize="15" Width="300" Height="30" ></TextBox>
                     </Border>
                 </StackPanel>
                 <Button Grid.Row="2" Grid.Column="2" Click="upload" CommandParameter="TOrgSection COrgSection IOrgSection" Style="{StaticResource RoundCornertranspart}" Width="100" Height="30" HorizontalAlignment="Left"  Cursor="Hand" Margin="10 30 0 0" VerticalAlignment="Center" Content="Upload"></Button>
                 <StackPanel Orientation="Horizontal" Grid.Row="2" VerticalAlignment="Center" Margin="10 20 0 0" HorizontalAlignment="left" Grid.Column="3">
                     <Label FontSize="26" Content="" Name="COrgSection" VerticalAlignment="Center" Foreground="Green"></Label>
-                    <TextBlock Text="" Name="TOrgSection" FontSize="20" Foreground="white" VerticalAlignment="Center" ></TextBlock>
+                    <TextBlock Text="" Name="TOrgSection" FontSize="20" Foreground="{DynamicResource colortext}" VerticalAlignment="Center" ></TextBlock>
                 </StackPanel>
 
                 <StackPanel Grid.Row="3"  Grid.Column="0" Grid.ColumnSpan="3" Margin="0 10 10 0" Orientation="Vertical" HorizontalAlignment="Center">
-                    <Label Content="Overall Remarks:" HorizontalAlignment="Center" FontSize="18" Foreground="White"></Label>
-                    <Border BorderBrush="white" Margin="0 2 0 0"   Padding="2"  BorderThickness="1">
-                        <TextBox Name="OverRemarks" materialDesign:HintAssist.Hint="If they need training, more employees, Customer Services, machine are all functioning well..." Foreground="White" AcceptsReturn="True" TextWrapping="Wrap" AcceptsTab="True" FontSize="15" VerticalContentAlignment="Top" Width="650" Height="100" ></TextBox>
+                    <Label Content="Overall Remarks:" HorizontalAlignment="Center" FontSize="18" Foreground="{DynamicResource colortext}"></Label>
+                    <Border BorderBrush="{DynamicResource colortext}" Margin="0 2 0 0"   Padding="2"  BorderThickness="1">
+                        <TextBox Name="OverRemarks" materialDesign:HintAssist.Hint="If they need training, more employees, Customer Services, machine are all functioning well..." Foreground="{DynamicResource colortext}" AcceptsReturn="True" TextWrapping="Wrap" AcceptsTab="True" FontSize="15" VerticalContentAlignment="Top" Width="650" Height="100" ></TextBox>
                     </Border>
                 </StackPanel>
 

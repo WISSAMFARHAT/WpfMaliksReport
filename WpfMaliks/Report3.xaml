@@ -19,12 +19,12 @@
                 <RowDefinition Height="auto"></RowDefinition>
                 <RowDefinition Height="auto"></RowDefinition>
             </Grid.RowDefinitions>
-            <Border Grid.Row="0" BorderBrush="white" BorderThickness="0 0 0 1"  >
+            <Border Grid.Row="0" BorderBrush="{DynamicResource colortext}" BorderThickness="0 0 0 1"  >
                 <Grid  Margin="0 8 0 0">
-                    <Label Content="Branch Visit Report" FontSize="20"  Foreground="white"></Label>
+                    <Label Content="Branch Visit Report" FontSize="20"  Foreground="{DynamicResource colortext}"></Label>
                     <StackPanel HorizontalAlignment="Right" Orientation="Horizontal">
-                        <Label Content="Conducted on :" FontSize="20" Foreground="white" ></Label>
-                        <Label Content="Feb 7,2022 9:34 AM" Name="date" FontSize="20" Foreground="white" ></Label>
+                        <Label Content="Conducted on :" FontSize="20" Foreground="{DynamicResource colortext}" ></Label>
+                        <Label Content="Feb 7,2022 9:34 AM" Name="date" FontSize="20" Foreground="{DynamicResource colortext}" ></Label>
                     </StackPanel>
                 </Grid>
             </Border>
@@ -46,12 +46,12 @@
                     <ColumnDefinition Width="auto"></ColumnDefinition>
                     <ColumnDefinition></ColumnDefinition>
                 </Grid.ColumnDefinitions>
-                <Border Grid.Column="0"  Grid.Row="0" VerticalAlignment="Top"   HorizontalAlignment="Left"  BorderBrush="Magenta" BorderThickness="0 0 0 3">
-                    <Label FontSize="20" Foreground="white" Content="Manager :"></Label>
+                <Border Grid.Column="0"  Grid.Row="0" VerticalAlignment="Top"   HorizontalAlignment="Left"  BorderBrush="#E61F4B" BorderThickness="0 0 0 3">
+                    <Label FontSize="20" Foreground="{DynamicResource colortext}" Content="Manager :"></Label>
                 </Border>
                 <StackPanel Grid.Row="1"  Grid.Column="0" Margin="0 0 10 0" Orientation="Vertical" HorizontalAlignment="Center">
-                    <Label Content="Overall:" HorizontalAlignment="Center" FontSize="18" Foreground="White"></Label>
-                    <Border BorderBrush="white"  BorderThickness="1">
+                    <Label Content="Overall:" HorizontalAlignment="Center" FontSize="18" Foreground="{DynamicResource colortext}"></Label>
+                    <Border BorderBrush="{DynamicResource colortext}"  BorderThickness="1">
                         <materialDesign:RatingBar Padding="50 0 50 0" Width="250" Name="Overall" Max="5">
 
                             <materialDesign:RatingBar.ValueItemTemplate>
@@ -61,7 +61,7 @@
                                     Kind="Star"
                                     Cursor="Hand"
                                     Height="30"
-                                    Foreground="Gold"
+                                    Foreground="{DynamicResource colorrating}"
                                     FocusVisualStyle="{x:Null}"
                                    
                                     Width="30"/>
@@ -73,16 +73,16 @@
                     </Border>
                 </StackPanel>
                 <StackPanel Grid.Row="1"  Grid.Column="1" Orientation="Vertical" HorizontalAlignment="Left">
-                    <Label Content="Remarks:" HorizontalAlignment="Center" FontSize="18" Foreground="White"></Label>
-                    <Border BorderBrush="white"   BorderThickness="1">
-                        <TextBox Name="ROverall" Foreground="White" VerticalContentAlignment="Center" FontSize="15" Width="300" Height="30" ></TextBox>
+                    <Label Content="Remarks:" HorizontalAlignment="Center" FontSize="18" Foreground="{DynamicResource colortext}"></Label>
+                    <Border BorderBrush="{DynamicResource colortext}"   BorderThickness="1">
+                        <TextBox Name="ROverall" Foreground="{DynamicResource colortext}" VerticalContentAlignment="Center" FontSize="15" Width="300" Height="30" ></TextBox>
                     </Border>
                 </StackPanel>
 
 
                 <StackPanel Grid.Row="2"  Grid.Column="0" Margin="0 0 10 0" Orientation="Vertical" HorizontalAlignment="Center">
-                    <Label Content="Leadership Skills:" HorizontalAlignment="Center" FontSize="18" Foreground="White"></Label>
-                    <Border BorderBrush="white"  BorderThickness="1">
+                    <Label Content="Leadership Skills:" HorizontalAlignment="Center" FontSize="18" Foreground="{DynamicResource colortext}"></Label>
+                    <Border BorderBrush="{DynamicResource colortext}"  BorderThickness="1">
                         <materialDesign:RatingBar Padding="50 0 50 0" Width="250" Name="Leadership" Max="5">
                             <materialDesign:RatingBar.ValueItemTemplate>
                                 <DataTemplate DataType="system:Int32">
@@ -91,7 +91,7 @@
                                     Kind="Star"
                                     Cursor="Hand"
                                     Height="30"
-                                    Foreground="Gold"
+                                    Foreground="{DynamicResource colorrating}"
                                             
                                     FocusVisualStyle="{x:Null}"
                                     Width="30"/>
@@ -103,15 +103,15 @@
                     </Border>
                 </StackPanel>
                 <StackPanel Grid.Row="2"  Grid.Column="1" Orientation="Vertical" HorizontalAlignment="Left">
-                    <Label Content="Remarks:" HorizontalAlignment="Center" FontSize="18" Foreground="White"></Label>
-                    <Border BorderBrush="white" BorderThickness="1">
-                        <TextBox Name="RLeadership" Foreground="White" VerticalContentAlignment="Center" FontSize="15" Width="300" Height="30" ></TextBox>
+                    <Label Content="Remarks:" HorizontalAlignment="Center" FontSize="18" Foreground="{DynamicResource colortext}"></Label>
+                    <Border BorderBrush="{DynamicResource colortext}" BorderThickness="1">
+                        <TextBox Name="RLeadership" Foreground="{DynamicResource colortext}" VerticalContentAlignment="Center" FontSize="15" Width="300" Height="30" ></TextBox>
                     </Border>
                 </StackPanel>
 
                 <StackPanel Grid.Row="3"  Grid.Column="0" Margin="0 0 10 0" Orientation="Vertical" HorizontalAlignment="Center">
-                    <Label Content="The Know How:" HorizontalAlignment="Center" FontSize="18" Foreground="White"></Label>
-                    <Border BorderBrush="white"  BorderThickness="1">
+                    <Label Content="The Know How:" HorizontalAlignment="Center" FontSize="18" Foreground="{DynamicResource colortext}"></Label>
+                    <Border BorderBrush="{DynamicResource colortext}"  BorderThickness="1">
                         <materialDesign:RatingBar Padding="50 0 50 0" Width="250" Name="Know" Max="5">
                             <materialDesign:RatingBar.ValueItemTemplate>
                                 <DataTemplate DataType="system:Int32">
@@ -120,7 +120,7 @@
                                     Kind="Star"
                                     Cursor="Hand"
                                     Height="30"
-                                    Foreground="Gold"
+                                    Foreground="{DynamicResource colorrating}"
                                             
                                     FocusVisualStyle="{x:Null}"
                                     Width="30"/>
@@ -132,15 +132,15 @@
                     </Border>
                 </StackPanel>
                 <StackPanel Grid.Row="3"  Grid.Column="1" Orientation="Vertical" HorizontalAlignment="Left">
-                    <Label Content="Remarks:" HorizontalAlignment="Center" FontSize="18" Foreground="White"></Label>
-                    <Border BorderBrush="white" BorderThickness="1">
-                        <TextBox Name="RKnow" Foreground="White" VerticalContentAlignment="Center" FontSize="15" Width="300" Height="30" ></TextBox>
+                    <Label Content="Remarks:" HorizontalAlignment="Center" FontSize="18" Foreground="{DynamicResource colortext}"></Label>
+                    <Border BorderBrush="{DynamicResource colortext}" BorderThickness="1">
+                        <TextBox Name="RKnow" Foreground="{DynamicResource colortext}" VerticalContentAlignment="Center" FontSize="15" Width="300" Height="30" ></TextBox>
                     </Border>
                 </StackPanel>
 
                 <StackPanel Grid.Row="4"  Grid.Column="0" Margin="0 0 10 0" Orientation="Vertical" HorizontalAlignment="Center">
-                    <Label Content="Performance:" HorizontalAlignment="Center" FontSize="18" Foreground="White"></Label>
-                    <Border BorderBrush="white"  BorderThickness="1">
+                    <Label Content="Performance:" HorizontalAlignment="Center" FontSize="18" Foreground="{DynamicResource colortext}"></Label>
+                    <Border BorderBrush="{DynamicResource colortext}"  BorderThickness="1">
                         <materialDesign:RatingBar Padding="50 0 50 0" Width="250" Name="Performance" Max="5">
                             <materialDesign:RatingBar.ValueItemTemplate>
                                 <DataTemplate DataType="system:Int32">
@@ -149,7 +149,7 @@
                                     Kind="Star"
                                     Cursor="Hand"
                                     Height="30"
-                                    Foreground="Gold"
+                                    Foreground="{DynamicResource colorrating}"
                                             
                                     FocusVisualStyle="{x:Null}"
                                     Width="30"/>
@@ -161,15 +161,15 @@
                     </Border>
                 </StackPanel>
                 <StackPanel Grid.Row="4"  Grid.Column="1" Orientation="Vertical" HorizontalAlignment="Left">
-                    <Label Content="Remarks:" HorizontalAlignment="Center" FontSize="18" Foreground="White"></Label>
-                    <Border BorderBrush="white" BorderThickness="1">
-                        <TextBox Name="RPerformance" Foreground="White" VerticalContentAlignment="Center" FontSize="15" Width="300" Height="30" ></TextBox>
+                    <Label Content="Remarks:" HorizontalAlignment="Center" FontSize="18" Foreground="{DynamicResource colortext}"></Label>
+                    <Border BorderBrush="{DynamicResource colortext}" BorderThickness="1">
+                        <TextBox Name="RPerformance" Foreground="{DynamicResource colortext}" VerticalContentAlignment="Center" FontSize="15" Width="300" Height="30" ></TextBox>
                     </Border>
                 </StackPanel>
 
                 <StackPanel Grid.Row="5"  Grid.Column="0" Margin="0 0 10 0" Orientation="Vertical" HorizontalAlignment="Center">
-                    <Label Content="Innovative:" HorizontalAlignment="Center" FontSize="18" Foreground="White"></Label>
-                    <Border BorderBrush="white"  BorderThickness="1">
+                    <Label Content="Innovative:" HorizontalAlignment="Center" FontSize="18" Foreground="{DynamicResource colortext}"></Label>
+                    <Border BorderBrush="{DynamicResource colortext}"  BorderThickness="1">
                         <materialDesign:RatingBar Padding="50 0 50 0" Width="250" Name="Innovation" Max="5">
                             <materialDesign:RatingBar.ValueItemTemplate>
                                 <DataTemplate DataType="system:Int32">
@@ -178,7 +178,7 @@
                                     Kind="Star"
                                     Cursor="Hand"
                                     Height="30"
-                                    Foreground="Gold"
+                                    Foreground="{DynamicResource colorrating}"
                                             
                                     FocusVisualStyle="{x:Null}"
                                     Width="30"/>
@@ -190,15 +190,15 @@
                     </Border>
                 </StackPanel>
                 <StackPanel Grid.Row="5"  Grid.Column="1" Orientation="Vertical" HorizontalAlignment="Left">
-                    <Label Content="Remarks:" HorizontalAlignment="Center" FontSize="18" Foreground="White"></Label>
-                    <Border BorderBrush="white" BorderThickness="1">
-                        <TextBox Name="RInnovation" Foreground="White" VerticalContentAlignment="Center" FontSize="15" Width="300" Height="30" ></TextBox>
+                    <Label Content="Remarks:" HorizontalAlignment="Center" FontSize="18" Foreground="{DynamicResource colortext}"></Label>
+                    <Border BorderBrush="{DynamicResource colortext}" BorderThickness="1">
+                        <TextBox Name="RInnovation" Foreground="{DynamicResource colortext}" VerticalContentAlignment="Center" FontSize="15" Width="300" Height="30" ></TextBox>
                     </Border>
                 </StackPanel>
 
                 <StackPanel Grid.Row="6"  Grid.Column="0" Margin="0 0 10 0" Orientation="Vertical" HorizontalAlignment="Center">
-                    <Label Content="Comunication Skills:" HorizontalAlignment="Center" FontSize="18" Foreground="White"></Label>
-                    <Border BorderBrush="white"  BorderThickness="1">
+                    <Label Content="Comunication Skills:" HorizontalAlignment="Center" FontSize="18" Foreground="{DynamicResource colortext}"></Label>
+                    <Border BorderBrush="{DynamicResource colortext}"  BorderThickness="1">
                         <materialDesign:RatingBar Padding="50 0 50 0" Width="250" Name="comunication" Max="5">
                             <materialDesign:RatingBar.ValueItemTemplate>
                                 <DataTemplate DataType="system:Int32">
@@ -207,7 +207,7 @@
                                     Kind="Star"
                                     Cursor="Hand"
                                     Height="30"
-                                    Foreground="Gold"
+                                    Foreground="{DynamicResource colorrating}"
                                             
                                     FocusVisualStyle="{x:Null}"
                                     Width="30"/>
@@ -219,17 +219,17 @@
                     </Border>
                 </StackPanel>
                 <StackPanel Grid.Row="6"  Grid.Column="1" Orientation="Vertical" HorizontalAlignment="Left">
-                    <Label Content="Remarks:" HorizontalAlignment="Center" FontSize="18" Foreground="White"></Label>
-                    <Border BorderBrush="white" BorderThickness="1">
-                        <TextBox Name="Rcomunication" Foreground="White" VerticalContentAlignment="Center" FontSize="15" Width="300" Height="30" ></TextBox>
+                    <Label Content="Remarks:" HorizontalAlignment="Center" FontSize="18" Foreground="{DynamicResource colortext}"></Label>
+                    <Border BorderBrush="{DynamicResource colortext}" BorderThickness="1">
+                        <TextBox Name="Rcomunication" Foreground="{DynamicResource colortext}" VerticalContentAlignment="Center" FontSize="15" Width="300" Height="30" ></TextBox>
                     </Border>
                 </StackPanel>
 
 
                 <StackPanel Grid.Row="7"  Grid.Column="0" Grid.ColumnSpan="3" Margin="0 10 10 0" Orientation="Vertical" HorizontalAlignment="Center">
-                    <Label Content="Overall Remarks:" HorizontalAlignment="Center" FontSize="18" Foreground="White"></Label>
-                    <Border BorderBrush="white" Margin="0 2 0 0"   Padding="2"  BorderThickness="1">
-                        <TextBox Name="OverRemarks3" materialDesign:HintAssist.Hint="If they need training, more employees, Customer Services, machine are all functioning well..." Foreground="White" AcceptsReturn="True" TextWrapping="Wrap" AcceptsTab="True" FontSize="15" VerticalContentAlignment="Top" Width="800" Height="80" ></TextBox>
+                    <Label Content="Overall Remarks:" HorizontalAlignment="Center" FontSize="18" Foreground="{DynamicResource colortext}"></Label>
+                    <Border BorderBrush="{DynamicResource colortext}" Margin="0 2 0 0"   Padding="2"  BorderThickness="1">
+                        <TextBox Name="OverRemarks3" materialDesign:HintAssist.Hint="If they need training, more employees, Customer Services, machine are all functioning well..." Foreground="{DynamicResource colortext}" AcceptsReturn="True" TextWrapping="Wrap" AcceptsTab="True" FontSize="15" VerticalContentAlignment="Top" Width="800" Height="80" ></TextBox>
                     </Border>
                 </StackPanel>
 

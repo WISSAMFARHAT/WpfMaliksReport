@@ -6,7 +6,7 @@
       xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
       xmlns:local="clr-namespace:WpfMaliks"
       mc:Ignorable="d" 
-      d:DesignHeight="800 " d:DesignWidth="700"  Background="#2A2B30"
+      d:DesignHeight="800 " d:DesignWidth="700"  Background="#031E28"
       Title="Print2">
 
     <Grid>
@@ -20,7 +20,7 @@
                 <ColumnDefinition></ColumnDefinition>
                 <ColumnDefinition Width="100"></ColumnDefinition>
             </Grid.ColumnDefinitions>
-            <Border   Grid.Column="1" VerticalAlignment="Top"  HorizontalAlignment="Center" Width="40" Height="40" BorderBrush="Magenta" BorderThickness="1" CornerRadius="50">
+            <Border   Grid.Column="1" VerticalAlignment="Top"  HorizontalAlignment="Center" Width="40" Height="40" BorderBrush="#E61F4B" BorderThickness="1" CornerRadius="50">
                 <Label Name="Number" Content="2/3" FontSize="20" HorizontalContentAlignment="Left" VerticalContentAlignment="Center" Foreground="White">
                 </Label>
             </Border>
@@ -39,7 +39,7 @@
                 <ColumnDefinition Width="auto"></ColumnDefinition>
 
             </Grid.ColumnDefinitions>
-            <Border Grid.Column="0"  Grid.Row="0" VerticalAlignment="Top"   HorizontalAlignment="Left"  BorderBrush="Magenta" BorderThickness="0 0 0 3">
+            <Border Grid.Column="0"  Grid.Row="0" VerticalAlignment="Top"   HorizontalAlignment="Left"  BorderBrush="#E61F4B" BorderThickness="0 0 0 3">
                 <Label FontSize="20" Foreground="white" Content="Stationery :"></Label>
             </Border>
             <StackPanel Grid.Row="1"  Grid.Column="0" Margin="0 10 10 0" Orientation="Vertical" HorizontalAlignment="Center">
@@ -68,7 +68,7 @@
             <StackPanel Grid.Row="1" Margin="0 10 0 0" Grid.Column="1" Orientation="Vertical" HorizontalAlignment="Left">
                 <Label Content="Remarks:" HorizontalAlignment="Center" FontSize="18" Foreground="White"></Label>
                 <Border BorderBrush="white"   BorderThickness="1">
-                    <TextBox Name="TRSEmployee"  Foreground="White" VerticalContentAlignment="Center" FontSize="15" Width="300" Height="30" ></TextBox>
+                    <TextBox Name="TRSEmployee"  Foreground="White" VerticalContentAlignment="Center" FontSize="15" Width="400" Height="30" ></TextBox>
                 </Border>
             </StackPanel>
 
@@ -98,14 +98,14 @@
             <StackPanel Grid.Row="2"  Margin="0 20 0 0" Grid.Column="1" Orientation="Vertical" HorizontalAlignment="Left">
                 <Label Content="Remarks:" HorizontalAlignment="Center" FontSize="18" Foreground="White"></Label>
                 <Border BorderBrush="white" BorderThickness="1">
-                    <TextBox Name="TSOSection" Foreground="White" VerticalContentAlignment="Center" FontSize="15" Width="300" Height="30" ></TextBox>
+                    <TextBox Name="TSOSection" Foreground="White" VerticalContentAlignment="Center" FontSize="15" Width="400" Height="30" ></TextBox>
                 </Border>
             </StackPanel>
 
             <StackPanel Grid.Row="3"  Grid.Column="0" Grid.ColumnSpan="2" Margin="0 20 10 0" Orientation="Vertical" HorizontalAlignment="Center">
                 <Label Content="Overall Remarks:" HorizontalAlignment="Center" FontSize="18" Foreground="White"></Label>
                 <Border BorderBrush="white" Margin="0 2 0 0"   Padding="2"  BorderThickness="1">
-                    <TextBox Name="OverRemarks1" Foreground="White" AcceptsReturn="True" TextWrapping="Wrap" AcceptsTab="True" FontSize="15" VerticalContentAlignment="Top" Width="550" Height="70" ></TextBox>
+                    <TextBox Name="OverRemarks1" Foreground="White" AcceptsReturn="True" TextWrapping="Wrap" AcceptsTab="True" FontSize="15" VerticalContentAlignment="Top" Width="650" Height="200" ></TextBox>
                 </Border>
             </StackPanel>
             
@@ -129,7 +129,7 @@
                 <ColumnDefinition Width="auto"></ColumnDefinition>
 
             </Grid.ColumnDefinitions>
-            <Border Grid.Column="0"  Margin="0 10 0 0" Grid.Row="0" VerticalAlignment="Top"   HorizontalAlignment="Left"  BorderBrush="Magenta" BorderThickness="0 0 0 3">
+            <Border Grid.Column="0"  Margin="0 10 0 0" Grid.Row="0" VerticalAlignment="Top"   HorizontalAlignment="Left"  BorderBrush="#E61F4B" BorderThickness="0 0 0 3">
                 <Label FontSize="20" Foreground="white" Content="Service :"></Label>
             </Border>
             <StackPanel Grid.Row="1"  Grid.Column="0" Margin="0 10 10 0" Orientation="Vertical" HorizontalAlignment="Center">
@@ -157,7 +157,7 @@
             <StackPanel Grid.Row="1"  Grid.Column="1" Margin="0 10 0 0" Orientation="Vertical" HorizontalAlignment="Left">
                 <Label Content="Remarks:" HorizontalAlignment="Center" FontSize="18" Foreground="White"></Label>
                 <Border BorderBrush="white"  BorderThickness="1">
-                    <TextBox Name="TSEmployee" Foreground="White" VerticalContentAlignment="Center" FontSize="15" Width="300" Height="30" ></TextBox>
+                    <TextBox Name="TSEmployee" Foreground="White" VerticalContentAlignment="Center" FontSize="15" Width="400" Height="30" ></TextBox>
                 </Border>
             </StackPanel>
 
@@ -187,7 +187,7 @@
             <StackPanel Grid.Row="2"  Margin="0 10 0 0" Grid.Column="1" Orientation="Vertical" HorizontalAlignment="Left">
                 <Label Content="Remarks:" HorizontalAlignment="Center" FontSize="18" Foreground="White"></Label>
                 <Border BorderBrush="white"   BorderThickness="1">
-                    <TextBox Name="ROrgSection" Foreground="White" VerticalContentAlignment="Center" FontSize="15" Width="300" Height="30" ></TextBox>
+                    <TextBox Name="ROrgSection" Foreground="White" VerticalContentAlignment="Center" FontSize="15" Width="400" Height="30" ></TextBox>
                 </Border>
             </StackPanel>
 
@@ -195,7 +195,7 @@
             <StackPanel Grid.Row="3"  Grid.Column="0" Grid.ColumnSpan="2" Margin="0 15 10 0" Orientation="Vertical" HorizontalAlignment="Center">
                 <Label Content="Overall Remarks:" HorizontalAlignment="Center" FontSize="18" Foreground="White"></Label>
                 <Border BorderBrush="white" Margin="0 2 0 0"   Padding="2"  BorderThickness="1">
-                    <TextBox Name="OverRemarks2" Foreground="White" AcceptsReturn="True" TextWrapping="Wrap" AcceptsTab="True" FontSize="15" VerticalContentAlignment="Top" Width="550" Height="70" ></TextBox>
+                    <TextBox Name="OverRemarks2" Foreground="White" AcceptsReturn="True" TextWrapping="Wrap" AcceptsTab="True" FontSize="15" VerticalContentAlignment="Top" Width="650" Height="200" ></TextBox>
                 </Border>
             </StackPanel>
             <StackPanel Grid.Row="4"  Grid.Column="0" Grid.ColumnSpan="2" Margin="0 0 10 0" Orientation="Vertical" HorizontalAlignment="Center">

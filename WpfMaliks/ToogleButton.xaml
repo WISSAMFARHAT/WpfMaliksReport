@@ -1,0 +1,18 @@
+﻿<UserControl x:Class="WpfMaliks.ToogleButton"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:WpfMaliks"
+             mc:Ignorable="d" 
+             d:DesignHeight="176.667" d:DesignWidth="288.667">
+   
+  
+        <Viewbox Margin="0,2,2,1">
+        <Grid HorizontalAlignment="Left" Height="60" Margin="0" VerticalAlignment="Top" Width="100">
+            <Rectangle Name="back" Fill="#FFA0A0A0" HorizontalAlignment="Left" Height="56" VerticalAlignment="top" Width="86" Margin="2,2,0,0" RadiusY="29" Cursor="Hand" RadiusX="29" MouseLeftButtonDown="Ellipse_MouseLeftButtonDown" />
+            <Ellipse Fill="white" Name="dot" HorizontalAlignment="Center" Height="52"  VerticalAlignment="Center" Width="50" Cursor="Hand" MouseLeftButtonDown="Ellipse_MouseLeftButtonDown"/>
+        </Grid>
+        </Viewbox>
+    
+</UserControl>

@@ -7,8 +7,8 @@
         xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
         MouseDown="Window_MouseDown"
         mc:Ignorable="d"
-        Title="MainWindow" Height="250" Width="500" Background="Transparent" ResizeMode="NoResize" AllowsTransparency="True" WindowStartupLocation="CenterScreen" WindowStyle="None">
-    <Border Background="#2A2B30"  BorderBrush="#2A2B30" BorderThickness="1" CornerRadius="30">
+        Title="MainWindow" Height="270" Width="500" Background="Transparent" ResizeMode="NoResize" AllowsTransparency="True" WindowStartupLocation="CenterScreen" WindowStyle="None">
+    <Border Background="#031E28"  Padding="10" BorderBrush="#E61F4B" BorderThickness="1" CornerRadius="30">
             <Grid>
             <Grid.RowDefinitions>
                 <RowDefinition></RowDefinition>

@@ -7,9 +7,9 @@
         xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
 
         mc:Ignorable="d"
-        Title="Index" Background="#2A2B30" WindowState="Maximized" WindowStyle="None">
+        Title="Index"  WindowState="Maximized" WindowStyle="None">
     <Grid>
-        <materialDesign:Card   Background="#2A2B30">
+        <materialDesign:Card >
             <Grid>
                 <Grid.ColumnDefinitions>
                     <ColumnDefinition Width="auto"></ColumnDefinition>
@@ -23,10 +23,10 @@
 
                     </Style>
                 </Grid.Resources>
-                <Grid Grid.Column="0" HorizontalAlignment="Left" x:Uid="navbar" Name="navbar" Background="#201F24">
+                <Grid Grid.Column="0" HorizontalAlignment="Left" x:Uid="navbar" Name="navbar" Background="#09181C" >
                     <ListView  Width="200" ScrollViewer.HorizontalScrollBarVisibility="Disabled">
                         <ListViewItem HorizontalAlignment="Left"  Margin="0 10" Width="200">
-       
+
                             <Grid>
                                 <Grid.ColumnDefinitions>
                                     <ColumnDefinition Width="Auto"></ColumnDefinition>
@@ -47,8 +47,8 @@
                                     <RowDefinition></RowDefinition>
                                     <RowDefinition></RowDefinition>
                                 </Grid.RowDefinitions>
-                            <Image Grid.Row="0" Name="img1" Source="images/user.png" Height="100" HorizontalAlignment="Center" Width="200" VerticalAlignment="Center" />
-                            <TextBlock Grid.Row="1" Name="user" HorizontalAlignment="Center" Foreground="White" FontSize="15" Text="User"></TextBlock>
+                                <Image Grid.Row="0" Name="img1" Source="images/user.png" Height="100" HorizontalAlignment="Center" Width="200" VerticalAlignment="Center" />
+                                <TextBlock Grid.Row="1" Name="user" HorizontalAlignment="Center" Foreground="White" FontSize="15" Text="User"></TextBlock>
                             </Grid>
                         </ListViewItem>
                         <ListViewItem HorizontalAlignment="Left" Margin="0" Padding="0"  Cursor="Hand" Width="200" Height="80">
@@ -125,13 +125,18 @@
                         <RowDefinition Height="50"></RowDefinition>
                         <RowDefinition></RowDefinition>
                     </Grid.RowDefinitions>
-                    <Grid Grid.Row="0" Background="#121212" >
+                    <Grid Grid.Row="0" Background="#E61F4B" Name="colorrow1" >
                         <Grid.ColumnDefinitions>
                             <ColumnDefinition></ColumnDefinition>
                             <ColumnDefinition></ColumnDefinition>
                         </Grid.ColumnDefinitions>
                         <TextBlock Foreground="white" FontSize="20" Grid.Column="0" Padding="20 0 0 0" Text="Report Form Application" VerticalAlignment="Center" HorizontalAlignment="Left"></TextBlock>
                         <StackPanel Orientation="Horizontal" Grid.Column="1" HorizontalAlignment="Right">
+                            <StackPanel Width="150" VerticalAlignment="Center" Orientation="Horizontal">
+                            <local:ToogleButton  Height="30" x:Name="bu"  Margin="0,10" MouseLeftButtonDown="Bu_MouseLeftButtonDown" />
+                            <materialDesign:PackIcon Kind="MoonWaningCrescent"     VerticalAlignment="Center" Foreground="WHITE"  />
+                            </StackPanel>
+
                             <Button  Background="{x:Null}" Style="{StaticResource MaterialDesignFloatingActionButton}" HorizontalAlignment="Left"
                                    Click="Minimise" BorderBrush="{x:Null}"   Foreground="White" >
                                 <StackPanel   >
@@ -146,10 +151,10 @@
                                 </StackPanel>
 
                             </Button>
-                           
+
                         </StackPanel>
                     </Grid>
-                    <Frame Name="frame"   Grid.Row="1"></Frame>
+                    <Frame Name="frame" Background="#031E28" Grid.Row="1"></Frame>
                 </Grid>
             </Grid>
         </materialDesign:Card>

@@ -18,6 +18,7 @@ using System.Windows.Shapes;
 
 namespace WpfMaliks
 {
+
     /// <summary>
     /// Interaction logic for Index.xaml
     /// </summary>
@@ -139,6 +140,27 @@ namespace WpfMaliks
         {
             if (e.ChangedButton == MouseButton.Left)
                 frame.Navigate(ht);
+        }
+
+        private void Bu_MouseLeftButtonDown(object sender, MouseButtonEventArgs e)
+        {
+
+            if (bu.Toggle==true)
+            {
+                colorrow1.Background = (System.Windows.Media.Brush)(new BrushConverter().ConvertFrom("#E61F4B"));
+                frame.Background= (System.Windows.Media.Brush)(new BrushConverter().ConvertFrom("#031E28"));
+                Application.Current.Resources["colortext"] = (System.Windows.Media.Brush)(new BrushConverter().ConvertFrom("#FFFFFF")); 
+                Application.Current.Resources["colorrating"] = (System.Windows.Media.Brush)(new BrushConverter().ConvertFrom("#FFD700")); 
+
+            }
+            else
+            {
+                colorrow1.Background= (System.Windows.Media.Brush)(new BrushConverter().ConvertFrom("#031E28"));
+                frame.Background = (System.Windows.Media.Brush)(new BrushConverter().ConvertFrom("#FFFFFF"));
+                Application.Current.Resources["colortext"] = (System.Windows.Media.Brush)(new BrushConverter().ConvertFrom("#E61F4B"));
+                Application.Current.Resources["colorrating"] = (System.Windows.Media.Brush)(new BrushConverter().ConvertFrom("#031E28")); ;
+
+            }
         }
     }
 }
